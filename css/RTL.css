@@ -1,0 +1,70 @@
+body,p,
+ label, .round-row, .date-range{
+    font-family: tahoma;
+    direction: rtl;
+    text-align: right;
+}
+.box-holder:before{
+    left: auto;
+    right: -10px;
+    width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent #ffffff;
+
+}
+
+.about-desc, .box-holder {
+
+    box-shadow: -2px 2px 0 0 #D8D8D8;
+   
+}
+.date-range{
+    float: left;
+}
+
+.exp-item {
+   border-right-width:  11px;
+   border-left: none;
+   
+    padding-right: 29px;
+    padding-left: 0;
+}
+.exp-holder:before {
+   left: auto;
+    right: -25px;
+}
+
+.timeline-holder {
+    margin-right: 25px;
+    margin-left: 0;
+}
+
+.exp-holder .body:before {
+    
+   right: 20px;
+   left: auto;
+    -moz-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    
+}
+#loading{
+    float: left;
+}
+
+@media all and (max-width:600px){
+    .box-holder:before{
+        display: none;
+    }
+    .head-title{
+        border-radius: 3px;
+        margin-top: 30px;
+    }
+    .avatar{
+        margin-top: 20px!important;
+    }
+}
