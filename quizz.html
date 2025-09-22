@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Violences en ligne et Harcèlement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .quiz-container {
+            padding: 40px;
+        }
+
+        .question {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .question.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .question-header {
+            margin-bottom: 25px;
+        }
+
+        .question-number {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            color: #333;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .answers {
+            margin-bottom: 30px;
+        }
+
+        .answer {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .answer:hover {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.2);
+        }
+
+        .answer.selected {
+            background: #e8f5e8;
+            border-color: #4caf50;
+            color: #2e7d2e;
+        }
+
+        .answer.correct {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .answer.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .answer::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .answer.selected::before {
+            background: #4caf50;
+            border-color: #4caf50;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            height: 8px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 10%;
+        }
+
+        .results {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .results.show {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: white;
+            position: relative;
+        }
+
+        .score-excellent {
+            background: linear-gradient(135deg, #4caf50, #45a049);
+        }
+
+        .score-good {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+        }
+
+        .score-average {
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+        }
+
+        .score-poor {
+            background: linear-gradient(135deg, #f44336, #d32f2f);
+        }
+
+        .results h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .results-details {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .restart-btn {
+            background: #28a745;
+            margin-top: 20px;
+        }
+
+        .restart-btn:hover {
+            background: #218838;
+        }
+
+        .explanation {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .explanation.show {
+            display: block;
+        }
+
+        .explanation h4 {
+            color: #856404;
+            margin-bottom: 8px;
+        }
+
+        .explanation p {
+            color: #856404;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Quiz Sécurité Numérique</h1>
+            <p>Testez vos connaissances sur les violences en ligne et le harcèlement</p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+            </div>
+
+            <!-- Questions générées dynamiquement par JavaScript -->
+        </div>
+
+        <div class="results" id="results">
+            <div class="score-circle" id="scoreCircle">
+                <span id="scorePercent">0%</span>
+            </div>
+            <h2 id="resultTitle">Résultats</h2>
+            <div class="results-details" id="resultDetails"></div>
+            <button class="btn restart-btn" onclick="restartQuiz()">Recommencer le quiz</button>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Qu'est-ce que le cyberharcèlement ?",
+                answers: [
+                    "L'utilisation d'un ordinateur sans autorisation",
+                    "L'intimidation répétée via les technologies numériques",
+                    "Le téléchargement illégal de contenus",
+                    "L'installation de logiciels malveillants"
+                ],
+                correct: 1,
+                explanation: "Le cyberharcèlement consiste en des actes d'intimidation, d'humiliation ou de menaces répétés via Internet, les réseaux sociaux, ou autres technologies numériques."
+            },
+            {
+                question: "Quelle est la première chose à faire si vous êtes victime de harcèlement en ligne ?",
+                answers: [
+                    "Répondre agressivement au harceleur",
+                    "Supprimer tous vos comptes sur les réseaux sociaux",
+                    "Bloquer l'utilisateur et signaler le comportement",
+                    "Ignorer complètement la situation"
+                ],
+                correct: 2,
+                explanation: "Il faut immédiatement bloquer la personne responsable et signaler son comportement aux plateformes concernées, tout en conservant des preuves."
+            },
+            {
+                question: "Le 'doxxing' consiste à :",
+                answers: [
+                    "Créer de faux comptes sur les réseaux sociaux",
+                    "Publier des informations personnelles de quelqu'un sans son consentement",
+                    "Pirater des comptes en ligne",
+                    "Envoyer des messages répétitifs"
+                ],
+                correct: 1,
+                explanation: "Le doxxing est la publication malveillante d'informations privées (adresse, téléphone, lieu de travail) dans le but de nuire à une personne."
+            },
+            {
+                question: "Quel pourcentage approximatif de jeunes ont déjà été victimes de cyberharcèlement ?",
+                answers: [
+                    "5-10%",
+                    "15-20%",
+                    "25-35%",
+                    "Plus de 50%"
+                ],
+                correct: 2,
+                explanation: "Selon plusieurs études, environ 25 à 35% des jeunes ont déjà été victimes de cyberharcèlement, un chiffre alarmant qui continue d'augmenter."
+            },
+            {
+                question: "Que signifie 'revenge porn' ?",
+                answers: [
+                    "Regarder du contenu pour adultes illégalement",
+                    "Partager des images intimes sans le consentement de la personne",
+                    "Critiquer négativement du contenu en ligne",
+                    "Créer de fausses identités en ligne"
+                ],
+                correct: 1,
+                explanation: "Le revenge porn consiste à partager des images ou vidéos intimes d'une personne sans son consentement, souvent par vengeance après une rupture."
+            },
+            {
+                question: "Quelle est la meilleure pratique pour protéger sa vie privée en ligne ?",
+                answers: [
+                    "Utiliser le même mot de passe partout",
+                    "Partager ses informations personnelles librement",
+                    "Configurer ses paramètres de confidentialité et utiliser des mots de passe forts",
+                    "Accepter toutes les demandes d'amis"
+                ],
+                correct: 2,
+                explanation: "Il est essentiel de configurer correctement ses paramètres de confidentialité, d'utiliser des mots de passe uniques et forts, et de limiter le partage d'informations personnelles."
+            },
+            {
+                question: "Le 'trolling' désigne :",
+                answers: [
+                    "La création de contenus humoristiques",
+                    "La recherche d'informations sur Internet",
+                    "Des comportements provocateurs pour créer des conflits en ligne",
+                    "L'utilisation excessive des réseaux sociaux"
+                ],
+                correct: 2,
+                explanation: "Le trolling consiste à poster des messages provocateurs, offensants ou hors-sujet dans le but délibéré de perturber les discussions et provoquer des réactions émotionnelles."
+            },
+            {
+                question: "En cas de cyberharcèlement grave, vers qui se tourner en priorité ?",
+                answers: [
+                    "Ses amis uniquement",
+                    "Les modérateurs des réseaux sociaux seulement",
+                    "Les forces de l'ordre et des professionnels",
+                    "Personne, il faut gérer seul"
+                ],
+                correct: 2,
+                explanation: "En cas de cyberharcèlement grave, il faut contacter les forces de l'ordre (police, gendarmerie), des associations spécialisées et éventuellement des professionnels de santé."
+            },
+            {
+                question: "Qu'est-ce que le 'slut-shaming' ?",
+                answers: [
+                    "Le fait de critiquer la qualité d'un produit",
+                    "L'humiliation d'une personne basée sur sa sexualité réelle ou supposée",
+                    "Le fait de partager des rumeurs sur quelqu'un",
+                    "La critique constructive d'un comportement"
+                ],
+                correct: 1,
+                explanation: "Le slut-shaming consiste à humilier, rabaisser ou critiquer une personne (souvent une femme) en raison de sa sexualité, de son comportement ou de son apparence."
+            },
+            {
+                question: "Quelle loi française sanctionne spécifiquement le harcèlement en ligne ?",
+                answers: [
+                    "La loi de 1881 sur la liberté de la presse",
+                    "L'article 222-33-2-2 du Code pénal",
+                    "La loi RGPD",
+                    "Le Code de la consommation"
+                ],
+                correct: 1,
+                explanation: "L'article 222-33-2-2 du Code pénal sanctionne spécifiquement le harcèlement moral via les communications électroniques, avec des peines pouvant aller jusqu'à 2 ans d'emprisonnement et 30 000€ d'amende."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let userAnswers = [];
+        let score = 0;
+
+        function initQuiz() {
+            currentQuestion = 0;
+            userAnswers = [];
+            score = 0;
+            document.getElementById('results').classList.remove('show');
+            document.getElementById('quizContainer').style.display = 'block';
+            showQuestion(0);
+            updateProgress();
+        }
+
+        function showQuestion(index) {
+            const container = document.getElementById('quizContainer');
+            const question = questions[index];
+            
+            const questionHTML = `
+                <div class="question active">
+                    <div class="question-header">
+                        <div class="question-number">Question ${index + 1} sur ${questions.length}</div>
+                        <div class="question-text">${question.question}</div>
+                    </div>
+                    <div class="answers" id="answers-${index}">
+                        ${question.answers.map((answer, i) => `
+                            <div class="answer" onclick="selectAnswer(${i})" data-answer="${i}">
+                                ${answer}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="explanation" id="explanation-${index}">
+                        <h4>💡 Explication :</h4>
+                        <p>${question.explanation}</p>
+                    </div>
+                    <div class="navigation">
+                        <button class="btn" onclick="previousQuestion()" ${index === 0 ? 'style="visibility: hidden"' : ''}>
+                            ← Précédent
+                        </button>
+                        <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>
+                            ${index === questions.length - 1 ? 'Voir les résultats' : 'Suivant →'}
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            container.innerHTML = questionHTML;
+            updateProgress();
+        }
+
+        function selectAnswer(answerIndex) {
+            const answers = document.querySelectorAll(`#answers-${currentQuestion} .answer`);
+            const nextBtn = document.getElementById('nextBtn');
+            
+            // Retirer la sélection précédente
+            answers.forEach(answer => answer.classList.remove('selected'));
+            
+            // Ajouter la sélection actuelle
+            answers[answerIndex].classList.add('selected');
+            
+            // Enregistrer la réponse
+            userAnswers[currentQuestion] = answerIndex;
+            
+            // Afficher les bonnes/mauvaises réponses
+            answers.forEach((answer, index) => {
+                if (index === questions[currentQuestion].correct) {
+                    answer.classList.add('correct');
+                } else if (index === answerIndex && index !== questions[currentQuestion].correct) {
+                    answer.classList.add('incorrect');
+                }
+            });
+            
+            // Afficher l'explication
+            document.getElementById(`explanation-${currentQuestion}`).classList.add('show');
+            
+            // Activer le bouton suivant
+            nextBtn.disabled = false;
+            
+            // Mettre à jour le score
+            if (answerIndex === questions[currentQuestion].correct) {
+                score++;
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                showQuestion(currentQuestion);
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                showQuestion(currentQuestion);
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function showResults() {
+            document.getElementById('quizContainer').style.display = 'none';
+            const resultsDiv = document.getElementById('results');
+            const scorePercent = Math.round((score / questions.length) * 100);
+            
+            document.getElementById('scorePercent').textContent = scorePercent + '%';
+            
+            const scoreCircle = document.getElementById('scoreCircle');
+            const resultTitle = document.getElementById('resultTitle');
+            
+            // Définir la couleur et le message selon le score
+            if (scorePercent >= 80) {
+                scoreCircle.className = 'score-circle score-excellent';
+                resultTitle.textContent = '🎉 Excellent !';
+            } else if (scorePercent >= 60) {
+                scoreCircle.className = 'score-circle score-good';
+                resultTitle.textContent = '👍 Bien joué !';
+            } else if (scorePercent >= 40) {
+                scoreCircle.className = 'score-circle score-average';
+                resultTitle.textContent = '📚 À améliorer';
+            } else {
+                scoreCircle.className = 'score-circle score-poor';
+                resultTitle.textContent = '💪 Il faut réviser !';
+            }
+            
+            // Détails des résultats
+            const details = document.getElementById('resultDetails');
+            details.innerHTML = `
+                <h3>📊 Détail de vos résultats :</h3>
+                <p><strong>Score obtenu :</strong> ${score} / ${questions.length} (${scorePercent}%)</p>
+                <p><strong>Bonnes réponses :</strong> ${score}</p>
+                <p><strong>Réponses incorrectes :</strong> ${questions.length - score}</p>
+                <hr style="margin: 15px 0;">
+                <h4>💡 Points clés à retenir :</h4>
+                <ul style="text-align: left; margin-top: 10px;">
+                    <li>Bloquez et signalez toujours les comportements de harcèlement</li>
+                    <li>Protégez votre vie privée avec des paramètres appropriés</li>
+                    <li>N'hésitez pas à demander de l'aide en cas de problème grave</li>
+                    <li>Respectez les autres en ligne comme dans la vraie vie</li>
+                </ul>
+            `;
+            
+            resultsDiv.classList.add('show');
+        }
+
+        function restartQuiz() {
+            initQuiz();
+        }
+
+        // Initialiser le quiz au chargement de la page
+        window.onload = function() {
+            initQuiz();
+        };
+    </script>
+</body>
+</html>
