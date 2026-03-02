@@ -44,29 +44,38 @@
   .foot{color:#555;font-size:.75rem;text-align:center;margin-top:24px;padding-bottom:16px}
   @media(max-width:900px){.sg{grid-template-columns:repeat(2,1fr)}.sg img{height:130px}.gh{gap:8px}.gt{font-size:1.1rem}}
   @media(max-width:500px){.sg{grid-template-columns:1fr 1fr}.sg img{height:100px}body{padding:20px 12px}h1{font-size:1.6rem}}
+  .done-toggle{background:none;border:1px solid var(--border);color:var(--muted);padding:10px 20px;border-radius:10px;cursor:pointer;font-size:.9rem;font-family:'DM Sans',sans-serif;transition:all .2s;display:flex;align-items:center;gap:8px;margin-bottom:24px}
+  .done-toggle:hover{border-color:var(--accent);color:var(--text)}
+  .done-toggle .arrow{transition:transform .3s;display:inline-block}
+  .done-toggle.open .arrow{transform:rotate(90deg)}
+  .done-section{display:none}
+  .done-section.open{display:block}
+  .done-section .gc{opacity:.55;transition:opacity .2s}
+  .done-section .gc:hover{opacity:1}
+  .done-section .gt a{text-decoration:line-through;text-decoration-color:var(--muted)}
 </style>
 </head>
 <body>
 <div class="ctn">
   <h1>🛋️ Prochains jeux à deux dans le canap</h1>
-  <p class="sub">6 jeux · Point & Click, Aventure, Puzzle</p>
+  <p class="sub">9 jeux · Point & Click, Aventure, Puzzle, Horror, Co-op</p>
 
-  <!-- 1. MACHINARIUM -->
+  <!-- REANIMAL -->
   <div class="gc">
     <div class="gh">
-      <span class="gt"><a href="https://store.steampowered.com/app/3372980/Tower_Wizard/" target="_blank">Tower Wizard</a></span>
-      <span class="b by">2025</span>
-      <span class="b btime">🕐 ~6h</span>
+      <span class="gt"><a href="https://store.steampowered.com/app/2129530/REANIMAL/" target="_blank">REANIMAL</a></span>
+      <span class="b by">2026</span>
+      <span class="b btime">🕐 ~5h</span>
       <span class="b bf">✓ Français</span>
-      <span class="b ba">📖 Texte uniquement</span>
-      <span class="b bnv">⭐ Extrêmement positive (97%) · 7 560 avis</span>
-      <span class="b bt">Incrémental / Idle / Clicker</span>
+      <span class="b ba">🔊 Audio FR + EN</span>
+      <span class="b bnv">⭐ Plutôt positive (74%) · 15 292 avis</span>
+      <span class="b bt">Horror / Co-op / Aventure</span>
     </div>
-    <div class="sg" data-appid="3372980">
-      <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396588460-OK5TJJ26X55825FT8URM/20250813053556_1.jpg" alt="Tower Wizard 1"></div>
-      <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396588599-B405RMP2UC3QI64CSL30/20250813053626_1.jpg" alt="Tower Wizard 2"></div>
-      <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396589566-W0BC6346YMDAHYACQDJZ/20250813053850_1.jpg" alt="Tower Wizard 3"></div>
-      <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396589757-J9NK3IJ55IANOMMWXRNO/20250813054125_1.jpg" alt="Tower Wizard 4"></div>
+    <div class="sg" data-appid="2129530">
+      <div><img src="https://gmedia.playstation.com/is/image/SIEPDC/reanimal-screenshot-02-en-05sept24?$1600px$" alt="REANIMAL 1"></div>
+      <div><img src="https://gmedia.playstation.com/is/image/SIEPDC/reanimal-screenshot-06-en-05sept24?$1600px$" alt="REANIMAL 2"></div>
+      <div><img src="https://files.vgtimes.com/gallery/main/203024/8193912072_reanimal_20260213002916.webp" alt="REANIMAL 3"></div>
+      <div><img src="https://files.vgtimes.com/gallery/main/203024/6171439907_reanimal_20260214012501.webp" alt="REANIMAL 4"></div>
     </div>
   </div>
 
@@ -215,6 +224,30 @@
       <div><img src="https://www.thegamebakers.com/wp-content/uploads/2024/12/03_freedomofchoice1-600x338.png" alt="Cairn 2"></div>
       <div><img src="https://www.thegamebakers.com/wp-content/uploads/2024/12/04_bivouacmanagement-600x338.jpg" alt="Cairn 3"></div>
       <div><img src="https://www.thegamebakers.com/wp-content/uploads/2024/12/07_mountainfaceoff-600x338.png" alt="Cairn 4"></div>
+    </div>
+  </div>
+
+  <!-- Jeux terminés -->
+  <button class="done-toggle" onclick="this.classList.toggle('open');document.getElementById('done').classList.toggle('open')">
+    <span class="arrow">›</span> Jeux terminés (1)
+  </button>
+  <div class="done-section" id="done">
+    <div class="gc">
+      <div class="gh">
+        <span class="gt"><a href="https://store.steampowered.com/app/3372980/Tower_Wizard/" target="_blank">Tower Wizard</a></span>
+        <span class="b by">2025</span>
+        <span class="b btime">🕐 ~6h</span>
+        <span class="b bf">✓ Français</span>
+        <span class="b ba">📖 Texte uniquement</span>
+        <span class="b bnv">⭐ Extrêmement positive (97%) · 7 560 avis</span>
+        <span class="b bt">Incrémental / Idle / Clicker</span>
+      </div>
+      <div class="sg" data-appid="3372980">
+        <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396588460-OK5TJJ26X55825FT8URM/20250813053556_1.jpg" alt="Tower Wizard 1"></div>
+        <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396588599-B405RMP2UC3QI64CSL30/20250813053626_1.jpg" alt="Tower Wizard 2"></div>
+        <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396589566-W0BC6346YMDAHYACQDJZ/20250813053850_1.jpg" alt="Tower Wizard 3"></div>
+        <div><img src="https://images.squarespace-cdn.com/content/v1/539c2a80e4b0432c6a7b7ff6/1761396589757-J9NK3IJ55IANOMMWXRNO/20250813054125_1.jpg" alt="Tower Wizard 4"></div>
+      </div>
     </div>
   </div>
 
