@@ -1,11 +1,6 @@
-var zoom = 3;
-var latitude = 47.2181;
-var longitude = -1.5528;
-
 $(document).ready(function() {
 
     setupSkills();
-    checkContactForm();
 
     function setupSkills() {
         if (true) {
@@ -23,35 +18,6 @@ $(document).ready(function() {
                 counter++;
             });
         }
-    }
-
-    function checkContactForm() {
-
-        //  triggers contact form validation
-        var formStatus = $(".contact-form").validate();
-        //   =====================================================
-
-        //sending contact form
-        $(".contact-form").submit(function(e) {
-            e.preventDefault();
-            if (formStatus.errorList.length === 0) {
-                $(".contact-form .submit").fadeOut(function() {
-                    $('#loading').css('visibility', 'visible');
-                    $.post('submit.php', $(".contact-form").serialize(),
-
-                        function(data) {
-                            $(".contact-form input,.contact-form textarea").not('.submit').val('');
-
-                            $('.message-box').html(data);
-
-                            $('#loading').css('visibility', 'hidden');
-                            $(".contact-form .submit").removeClass('disabled').css('display', 'block');
-                        }
-
-                    );
-                });
-            }
-        });
     }
 
     $('.nav-menu a').address($(this).attr('href'));
@@ -101,24 +67,6 @@ $(document).ready(function() {
 
         event.preventDefault();
     });
-});
-
-$('.map').gmap3({
-    map: {
-        options: {
-            center: [latitude, longitude],
-
-            zoom: zoom,
-            mapTypeControl: true,
-
-            navigationControl: true,
-            scrollwheel: false,
-            streetViewControl: false
-        }
-    },
-    marker: {
-        latLng: [latitude, longitude]
-    }
 });
 
 // Sticky Nav
