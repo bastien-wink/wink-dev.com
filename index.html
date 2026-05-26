@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" data-lang="fr">
 
 <head>
     <!--[if lt IE 9]>
     <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title>Bastien Thomas Resume</title>
+    <title>Bastien Thomas — Lead Dev & Architecte IA</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Bastien Thomas, consultant Lead Dev & Architecte logiciel à Nantes, spécialisé en PHP/Symfony, infrastructure back-end et intégration de l'IA en production.">
+    <meta name="author" content="Bastien Thomas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" media="screen" href="css/bootstrap/css/bootstrap-responsive.min.css">
@@ -14,9 +16,39 @@
     <link rel="stylesheet" href="css/style-1.css">
     <link rel="stylesheet" media="screen" href="css/responsive.css">
     <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <style>
+        /* FR / EN language toggle (classes prefixed to avoid clash with css_browser_selector) */
+        html[data-lang="fr"] .lang-en { display: none !important; }
+        html[data-lang="en"] .lang-fr { display: none !important; }
+
+        .lang-switch {
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lang-switch button {
+            border: 1px solid #ccc;
+            background: #fff;
+            color: #666;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .lang-switch button:first-child { border-radius: 4px 0 0 4px; border-right: none; }
+        .lang-switch button:last-child { border-radius: 0 4px 4px 0; }
+        .lang-switch button.active { background: #2c3e50; color: #fff; border-color: #2c3e50; }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".nav-menu">
+    <div class="lang-switch no-print">
+        <button type="button" data-set-lang="fr">FR</button>
+        <button type="button" data-set-lang="en">EN</button>
+    </div>
     <div class="wrapper container ">
         <div class="resume-holder">
             <div class="resume ">
@@ -26,34 +58,37 @@
                             <div class="span3 no-print">
                                 <div class="head-title">
                                     <h1>BASTIEN THOMAS</h1>
-                                    <h3>DEV SENIOR &amp; ARCHITECTE IA</h3>
+                                    <h3><span class="lang-fr">DEV SENIOR &amp; ARCHITECTE IA</span><span class="lang-en">SENIOR DEV &amp; AI ARCHITECT</span></h3>
                                 </div>
                             </div>
                             <div class="span4 no-screen">
                                 <div class="head-title">
                                     <h1>BASTIEN THOMAS</h1>
-                                    <h3>DEV SENIOR &amp; ARCHITECTE IA</h3>
+                                    <h3><span class="lang-fr">DEV SENIOR &amp; ARCHITECTE IA</span><span class="lang-en">SENIOR DEV &amp; AI ARCHITECT</span></h3>
                                 </div>
                             </div>
                             <div class="span7 no-print">
                                 <div class="nav-menu">
                                     <ul class="nav nav-pills normal">
                                         <li class="active">
-                                            <a href="#home">HOME</a>
+                                            <a href="#home"><span class="lang-fr">ACCUEIL</span><span class="lang-en">HOME</span></a>
                                         </li>
-                                        <li><a href="#about">ABOUT</a></li>
-                                        <li><a href="#skills">SKILLS</a></li>
-                                        <li><a href="#experiences">EXPERIENCE</a></li>
-                                        <li><a href="#educations">EDUCATION</a></li>
+                                        <li><a href="#about"><span class="lang-fr">PROFIL</span><span class="lang-en">ABOUT</span></a></li>
+                                        <li><a href="#skills"><span class="lang-fr">COMPÉTENCES</span><span class="lang-en">SKILLS</span></a></li>
+                                        <li><a href="#experiences"><span class="lang-fr">EXPÉRIENCE</span><span class="lang-en">EXPERIENCE</span></a></li>
+                                        <li><a href="#educations"><span class="lang-fr">FORMATION</span><span class="lang-en">EDUCATION</span></a></li>
                                     </ul>
                                     <select class="nav nav-pills dropdown">
-                                        <option value="#home">
-                                            HOME
-                                        </option>
-                                        <option value="#about">ABOUT</option>
-                                        <option value="#skills">SKILLS</option>
-                                        <option value="#experiences">EXPERIENCE</option>
-                                        <option value="#educations">EDUCATION</option>
+                                        <option value="#home" class="lang-fr">ACCUEIL</option>
+                                        <option value="#home" class="lang-en">HOME</option>
+                                        <option value="#about" class="lang-fr">PROFIL</option>
+                                        <option value="#about" class="lang-en">ABOUT</option>
+                                        <option value="#skills" class="lang-fr">COMPÉTENCES</option>
+                                        <option value="#skills" class="lang-en">SKILLS</option>
+                                        <option value="#experiences" class="lang-fr">EXPÉRIENCE</option>
+                                        <option value="#experiences" class="lang-en">EXPERIENCE</option>
+                                        <option value="#educations" class="lang-fr">FORMATION</option>
+                                        <option value="#educations" class="lang-en">EDUCATION</option>
                                     </select>
                                 </div>
                             </div>
@@ -131,7 +166,7 @@
                                     <i class="icon-info-sign"></i>
                                 </div>
                                 <div class="title">
-                                    <h4>ABOUT</h4>
+                                    <h4><span class="lang-fr">PROFIL</span><span class="lang-en">ABOUT</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -163,8 +198,7 @@
                                     </div>
                                     <div class="span9">
                                         <div class="desc text-holder">
-                                            <p>
-                                                <img width="16px" src="images/flagfrance.svg" />
+                                            <p class="lang-fr">
                                                 Je suis consultant <b>Lead Dev &amp; Architecte logiciel</b>, spécialisé
                                                 en <b>PHP</b>, <b>Symfony</b>, infrastructure <b>back-end</b> et
                                                 <b>intégration de l'IA en production</b>. <br />
@@ -185,8 +219,8 @@
                                                 Mon bureau est à <b>Nantes</b>, je peux y travailler en remote ou me
                                                 déplacer.
                                             </p>
-                                            <p>
-                                                <img width="16px" src="images/united-kingdom.svg" /> I am a
+                                            <p class="lang-en">
+                                                I am a
                                                 <b>Lead Dev &amp; Software Architect</b> consultant, specialised in
                                                 <b>PHP</b>, <b>Symfony</b>, <b>back-end</b> infrastructure and
                                                 <b>AI integration in production</b>. <br />
@@ -225,7 +259,8 @@
                                                     <li>
                                                         <div class="round-row  available">
                                                             <i class="icon-ok-sign"></i>
-                                                            <span>Available to freelance job!</span>
+                                                            <span class="lang-fr">Disponible pour une mission freelance !</span>
+                                                            <span class="lang-en">Available to freelance job!</span>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -245,7 +280,7 @@
                                     <i class="icon-wrench"></i>
                                 </div>
                                 <div class="title">
-                                    <h4>SKILLS</h4>
+                                    <h4><span class="lang-fr">COMPÉTENCES</span><span class="lang-en">SKILLS</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -254,39 +289,39 @@
                                 <div class="row-fluid skills-holder left">
                                     <div class="span6 holder">
                                         <div class="skill" data-level="99">
-                                            <label>Back-end development - API design</label>
+                                            <label><span class="lang-fr">Développement back-end - Conception d'API</span><span class="lang-en">Back-end development - API design</span></label>
                                         </div>
                                         <div class="skill" data-level="92">
-                                            <label>Architecture & pilotage de projets IA</label>
+                                            <label><span class="lang-fr">Architecture &amp; pilotage de projets IA</span><span class="lang-en">AI project architecture &amp; management</span></label>
                                         </div>
                                         <div class="skill" data-level="97">
                                             <label>PHP (Symfony / Laravel) - Python</label>
                                         </div>
                                         <div class="skill" data-level="90">
-                                            <label>Admin Linux - Docker - Scripting</label>
+                                            <label><span class="lang-fr">Administration Linux - Docker - Scripting</span><span class="lang-en">Linux administration - Docker - Scripting</span></label>
                                         </div>
                                         <div class="skill" data-level="90">
-                                            <label>Database - PostgreSQL / MariaDB / ElasticSearch / Cassandra</label>
+                                            <label><span class="lang-fr">PostgreSQL / MariaDB / ElasticSearch / Cassandra</span><span class="lang-en">Database - PostgreSQL / MariaDB / ElasticSearch / Cassandra</span></label>
                                         </div>
                                         <div class="skill" data-level="85">
-                                            <label>Server Management (AWS / GCP) - Monitoring</label>
+                                            <label><span class="lang-fr">Gestion de serveurs (AWS / GCP) - Monitoring</span><span class="lang-en">Server Management (AWS / GCP) - Monitoring</span></label>
                                         </div>
                                     </div>
                                     <div class="span6 holder">
                                         <div class="skill" data-level="95">
-                                            <label>Project management - Scrum - Pilotage Jira</label>
+                                            <label><span class="lang-fr">Gestion de projet - Scrum - Pilotage Jira</span><span class="lang-en">Project management - Scrum - Jira</span></label>
                                         </div>
                                         <div class="skill" data-level="80">
-                                            <label>Startup business - Funding - Growth</label>
+                                            <label><span class="lang-fr">Business startup - Levée de fonds - Croissance</span><span class="lang-en">Startup business - Funding - Growth</span></label>
                                         </div>
                                         <div class="skill" data-level="87">
-                                            <label>Product design - Software achitect</label>
+                                            <label><span class="lang-fr">Design produit - Architecte logiciel</span><span class="lang-en">Product design - Software architect</span></label>
                                         </div>
                                         <div class="skill" data-level="80">
-                                            <label>Asynchronous design - RabbitMQ</label>
+                                            <label><span class="lang-fr">Conception asynchrone - RabbitMQ</span><span class="lang-en">Asynchronous design - RabbitMQ</span></label>
                                         </div>
                                         <div class="skill" data-level="88">
-                                            <label>Analyse de données - BI</label>
+                                            <label><span class="lang-fr">Analyse de données - BI</span><span class="lang-en">Data analysis - BI</span></label>
                                         </div>
                                         <div class="skill" data-level="70">
                                             <label>Front-end - JS / React / Angular / Vue</label>
@@ -305,7 +340,7 @@
                                     <i class="icon-suitcase"></i>
                                 </div>
                                 <div class="title">
-                                    <h4>EXPERIENCE</h4>
+                                    <h4><span class="lang-fr">EXPÉRIENCE</span><span class="lang-en">EXPERIENCE</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -316,16 +351,19 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Avril 2026 / Maintenant</div>
+                                                    <div class="date-range"><span class="lang-fr">Avril 2026 / Maintenant</span><span class="lang-en">April 2026 / Now</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Génération Zébrée</h3>
-                                                    <h4>Senior Developer &amp; AI Engineer (LLM / Data) – Consultant</h4>
+                                                    <h4><span class="lang-fr">Développeur Senior &amp; AI Engineer (LLM / Data) – Consultant</span><span class="lang-en">Senior Developer &amp; AI Engineer (LLM / Data) – Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Conception d'un moteur de matching par IA scorant ~1 million de paires métiers/formations, via orchestration multi-agents et validation human-in-the-loop </li>
-                                                        <li>Conception d'ETL (Python)</li>
-                                                        <li>Maintien et évolution de generationzebree.fr (Symfony, PostgreSQL)</li>
+                                                        <li class="lang-fr">Conception d'un moteur de matching par IA scorant ~1 million de paires métiers/formations, via orchestration multi-agents et validation human-in-the-loop</li>
+                                                        <li class="lang-en">Design of an AI matching engine scoring ~1 million job/training pairs, through multi-agent orchestration and human-in-the-loop validation</li>
+                                                        <li class="lang-fr">Conception d'ETL (Python)</li>
+                                                        <li class="lang-en">ETL design (Python)</li>
+                                                        <li class="lang-fr">Maintien et évolution de generationzebree.fr (Symfony, PostgreSQL)</li>
+                                                        <li class="lang-en">Maintenance and evolution of generationzebree.fr (Symfony, PostgreSQL)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -333,20 +371,26 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Juin 2023 / Mars 2026</div>
+                                                    <div class="date-range"><span class="lang-fr">Juin 2023 / Mars 2026</span><span class="lang-en">June 2023 / March 2026</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Daxium</h3>
-                                                    <h4>Senior Symfony developer - Consultant</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony senior - Consultant</span><span class="lang-en">Senior Symfony developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
                                                         <li>PHP/Symfony, Postgres, AWS</li>
-                                                        <li>Plateforme modulaire web & mobile de collecte de données terrain (Industrie, Audit qualité, BTP, Retail)</li>
-                                                        <li>Modernisation d'une codebase de 10 ans : migration Symfony 3 à 6 + outillage qualité</li>
-                                                        <li>Optimisation pour la montée en charge : séparation lecture/écriture (replica), indexation et optimisation de requêtes, cache</li>
-                                                        <li>Migration sans coupure du moteur asynchrone : ~30 traitements critiques rebâtis avec files dédiées et reprise sur erreur</li>
-                                                        <li>Refonte du cœur de calcul applicatif : fiabilisation et gains de performance</li>
-                                                        <li>Mise en place d'outils IA</li>
+                                                        <li class="lang-fr">Plateforme modulaire web &amp; mobile de collecte de données terrain (Industrie, Audit qualité, BTP, Retail)</li>
+                                                        <li class="lang-en">Modular web &amp; mobile platform for field data collection (Industry, Quality audit, Construction, Retail)</li>
+                                                        <li class="lang-fr">Modernisation d'une codebase de 10 ans : migration Symfony 3 à 6 + outillage qualité</li>
+                                                        <li class="lang-en">Modernisation of a 10-year-old codebase: Symfony 3 to 6 migration + quality tooling</li>
+                                                        <li class="lang-fr">Optimisation pour la montée en charge : séparation lecture/écriture (replica), indexation et optimisation de requêtes, cache</li>
+                                                        <li class="lang-en">Scalability optimisation: read/write splitting (replica), indexing and query optimisation, caching</li>
+                                                        <li class="lang-fr">Migration sans coupure du moteur asynchrone : ~30 traitements critiques rebâtis avec files dédiées et reprise sur erreur</li>
+                                                        <li class="lang-en">Zero-downtime migration of the async engine: ~30 critical jobs rebuilt with dedicated queues and error recovery</li>
+                                                        <li class="lang-fr">Refonte du cœur de calcul applicatif : fiabilisation et gains de performance</li>
+                                                        <li class="lang-en">Overhaul of the application's core computation engine: improved reliability and performance</li>
+                                                        <li class="lang-fr">Mise en place d'outils IA</li>
+                                                        <li class="lang-en">Implementation of AI tools</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -355,14 +399,15 @@
                                             <div class="exp-holder">
                                                 <div class="head">
                                                     <div class="date-range">Oct 2022 / Dec 2022</div>
-                                                    <h4 class="location">London (remote)</h4>
+                                                    <h4 class="location"><span class="lang-fr">Londres (à distance)</span><span class="lang-en">London (remote)</span></h4>
                                                     <h3>Inflyter</h3>
-                                                    <h4>Senior Symfony developer - Consultant</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony senior - Consultant</span><span class="lang-en">Senior Symfony developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
                                                         <li>Symfony / Elasticsearch</li>
-                                                        <li>API PHP custom à destination des boutiques duty free</li>
+                                                        <li class="lang-fr">API PHP custom à destination des boutiques duty free</li>
+                                                        <li class="lang-en">Custom PHP API for duty free shops</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -373,16 +418,18 @@
                                                     <div class="date-range">Nov 2021 / Oct 2022</div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>PaloIt</h3>
-                                                    <h4>Lead dev - Consultant</h4>
+                                                    <h4><span class="lang-fr">Lead dev - Consultant</span><span class="lang-en">Lead dev - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Lead dev pour la refonte du SI d'un groupe
-                                                            e-commerce B2B</li>
-                                                        <li>Formations Craft / Clean code / CI-CD / Elasticsearch /
-                                                            Sécurité</li>
-                                                        <li>Architecture API et React</li>
-                                                        <li>Mise en place de l'infra</li>
+                                                        <li class="lang-fr">Lead dev pour la refonte du SI d'un groupe e-commerce B2B</li>
+                                                        <li class="lang-en">Lead dev for the IS overhaul of a B2B e-commerce group</li>
+                                                        <li class="lang-fr">Formations Craft / Clean code / CI-CD / Elasticsearch / Sécurité</li>
+                                                        <li class="lang-en">Training: Craft / Clean code / CI-CD / Elasticsearch / Security</li>
+                                                        <li class="lang-fr">Architecture API et React</li>
+                                                        <li class="lang-en">API and React architecture</li>
+                                                        <li class="lang-fr">Mise en place de l'infra chez Clevercloud</li>
+                                                        <li class="lang-en">Infrastructure setup with Clevercloud</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -393,14 +440,14 @@
                                                     <div class="date-range">Dec 2020 / Sept 2021</div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>iD CITY</h3>
-                                                    <h4>Senior Symfony developer - Consultant</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony senior - Consultant</span><span class="lang-en">Senior Symfony developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Restructuration du projet pour un passage en open source
-                                                        </li>
-                                                        <li>Conception de fonctionnalités pour la plateforme de
-                                                            concertation en ligne (Symfony, Sonata)</li>
+                                                        <li class="lang-fr">Restructuration du projet pour un passage en open source</li>
+                                                        <li class="lang-en">Project restructuring for an open source release</li>
+                                                        <li class="lang-fr">Conception de fonctionnalités pour la plateforme de concertation en ligne (Symfony, Sonata)</li>
+                                                        <li class="lang-en">Feature design for the online public consultation platform (Symfony, Sonata)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -408,15 +455,17 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">June 2020 / Now</div>
+                                                    <div class="date-range"><span class="lang-fr">Juin 2020 / Maintenant</span><span class="lang-en">June 2020 / Now</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>App-Elles</h3>
-                                                    <h4>Back End Developer</h4>
+                                                    <h4><span class="lang-fr">Développeur Back-end</span><span class="lang-en">Back End Developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>API Platform development</li>
-                                                        <li>Security audit</li>
+                                                        <li class="lang-fr">Développement avec API Platform</li>
+                                                        <li class="lang-en">API Platform development</li>
+                                                        <li class="lang-fr">Audit de sécurité</li>
+                                                        <li class="lang-en">Security audit</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -424,13 +473,15 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2019 / Now</div>
-                                                    <h3>Formateur indépendant</h3>
+                                                    <div class="date-range"><span class="lang-fr">2019 / Maintenant</span><span class="lang-en">2019 / Now</span></div>
+                                                    <h3><span class="lang-fr">Formateur indépendant</span><span class="lang-en">Independent trainer</span></h3>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Dev (PHP, Symfony, Javascript, SQL, System)</li>
-                                                        <li>Management de projet, agilité, Scrum</li>
+                                                        <li class="lang-fr">Dev (PHP, Symfony, Javascript, SQL, Système)</li>
+                                                        <li class="lang-en">Dev (PHP, Symfony, Javascript, SQL, System)</li>
+                                                        <li class="lang-fr">Management de projet, agilité, Scrum</li>
+                                                        <li class="lang-en">Project management, agility, Scrum</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -445,9 +496,10 @@
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Technical Lead, tech partners relationship</li>
-                                                        <li>PHP/Symfony developments, AWS, Redis, MariaDB / Angular /
-                                                            React Native</li>
+                                                        <li class="lang-fr">Lead technique, relation avec les partenaires techniques</li>
+                                                        <li class="lang-en">Technical Lead, tech partners relationship</li>
+                                                        <li class="lang-fr">Développements PHP/Symfony, AWS, Redis, MariaDB / Angular / React Native</li>
+                                                        <li class="lang-en">PHP/Symfony developments, AWS, Redis, MariaDB / Angular / React Native</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -458,11 +510,12 @@
                                                     <div class="date-range">March 2020</div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Son-Video.com</h3>
-                                                    <h4>Consultant tech</h4>
+                                                    <h4><span class="lang-fr">Consultant tech</span><span class="lang-en">Tech consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Symfony / Elasticsearch setup</li>
+                                                        <li class="lang-fr">Mise en place Symfony / Elasticsearch</li>
+                                                        <li class="lang-en">Symfony / Elasticsearch setup</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -473,11 +526,12 @@
                                                     <div class="date-range">February / April 2019</div>
                                                     <h4 class="location">Paris</h4>
                                                     <h3>FlowFo</h3>
-                                                    <h4>Lead developer (Consultant)</h4>
+                                                    <h4><span class="lang-fr">Lead developer (Consultant)</span><span class="lang-en">Lead developer (Consultant)</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>PHP Symfony 4 with API Platform / ReactJS</li>
+                                                        <li class="lang-fr">PHP Symfony 4 avec API Platform / ReactJS</li>
+                                                        <li class="lang-en">PHP Symfony 4 with API Platform / ReactJS</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -485,7 +539,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2018-2019 (part time)</div>
+                                                    <div class="date-range"><span class="lang-fr">2018-2019 (temps partiel)</span><span class="lang-en">2018-2019 (part time)</span></div>
                                                     <h4 class="location">Paris</h4>
                                                     <h3>Merci Max</h3>
                                                     <h4>Lead developer</h4>
@@ -504,16 +558,15 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Fall 2018</div>
+                                                    <div class="date-range"><span class="lang-fr">Automne 2018</span><span class="lang-en">Fall 2018</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Gulfstream Communication</h3>
-                                                    <h4>Symfony developer (Consultant)</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony (Consultant)</span><span class="lang-en">Symfony developer (Consultant)</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Full stack development for e-commerce and PIM (Product
-                                                            Information Management)
-                                                        </li>
+                                                        <li class="lang-fr">Développement full stack pour e-commerce et PIM (Product Information Management)</li>
+                                                        <li class="lang-en">Full stack development for e-commerce and PIM (Product Information Management)</li>
                                                         <li>PHP 7.2 / Symfony 4</li>
                                                         <li>Postgres</li>
                                                         <li>Docker</li>
@@ -524,17 +577,16 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Spring 2018</div>
+                                                    <div class="date-range"><span class="lang-fr">Printemps 2018</span><span class="lang-en">Spring 2018</span></div>
                                                     <h4 class="location">Limoges</h4>
                                                     <h3>Sanilea</h3>
-                                                    <h4>Symfony developer (Consultant)</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony (Consultant)</span><span class="lang-en">Symfony developer (Consultant)</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Ambulance management software (HR, planning, location
-                                                            tracking)
-                                                        </li>
-                                                        <li>Full stack development
+                                                        <li class="lang-fr">Logiciel de gestion d'ambulances (RH, planning, géolocalisation)</li>
+                                                        <li class="lang-en">Ambulance management software (HR, planning, location tracking)</li>
+                                                        <li class="lang-fr">Développement full stack
                                                             <ul>
                                                                 <li>PHP 7 / Symfony 3</li>
                                                                 <li>Docker</li>
@@ -542,9 +594,16 @@
                                                                 <li>ES 2018</li>
                                                             </ul>
                                                         </li>
-                                                        <li>Remote consulting focused on software security and features
-                                                            development
+                                                        <li class="lang-en">Full stack development
+                                                            <ul>
+                                                                <li>PHP 7 / Symfony 3</li>
+                                                                <li>Docker</li>
+                                                                <li>Redis</li>
+                                                                <li>ES 2018</li>
+                                                            </ul>
                                                         </li>
+                                                        <li class="lang-fr">Conseil à distance axé sur la sécurité logicielle et le développement de fonctionnalités</li>
+                                                        <li class="lang-en">Remote consulting focused on software security and features development</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -552,22 +611,33 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">December 2016 - December 2017</div>
+                                                    <div class="date-range"><span class="lang-fr">Décembre 2016 - Décembre 2017</span><span class="lang-en">December 2016 - December 2017</span></div>
                                                     <h4 class="location">Paris</h4>
                                                     <h3>Happn</h3>
-                                                    <h4>Back-end developer (Consultant)</h4>
+                                                    <h4><span class="lang-fr">Développeur back-end (Consultant)</span><span class="lang-en">Back-end developer (Consultant)</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Building API for mobile and web clients. Main focus on the
-                                                            Gateway layer
+                                                        <li class="lang-fr">Construction d'API pour clients mobiles et web. Focalisé sur la couche Gateway</li>
+                                                        <li class="lang-en">Building API for mobile and web clients. Main focus on the Gateway layer</li>
+                                                        <li class="lang-fr">Migration d'un monolithe vers une architecture microservices</li>
+                                                        <li class="lang-en">Migration from a monolith into microservices</li>
+                                                        <li class="lang-fr">Fort trafic (39M d'utilisateurs en 2017). Enjeux de scalabilité et de temps de réponse</li>
+                                                        <li class="lang-en">High traffic (39M users in 2017). Scalability and response time challenges</li>
+                                                        <li class="lang-fr">
+                                                            Technologies utilisées au quotidien :
+                                                            <ul>
+                                                                <li>PHP (Symfony / Zend Framework)</li>
+                                                                <li>Docker</li>
+                                                                <li>Elasticsearch</li>
+                                                                <li>Memcached</li>
+                                                                <li>RabbitMQ</li>
+                                                                <li>MariaDB</li>
+                                                                <li>Cassandra</li>
+                                                                <li>Cloud Google (Cloud Servers, Cloud Storage, PubSub, BigQuery)</li>
+                                                            </ul>
                                                         </li>
-                                                        <li>Migration from a monolith into microservices</li>
-                                                        <li>High traffic (39M users in 2017). Scalability and response
-                                                            time
-                                                            chanlenges
-                                                        </li>
-                                                        <li>
+                                                        <li class="lang-en">
                                                             Technologies used on a daily basis:
                                                             <ul>
                                                                 <li>PHP (Symfony / Zend Framework)</li>
@@ -577,9 +647,7 @@
                                                                 <li>RabbitMQ</li>
                                                                 <li>MariaDB</li>
                                                                 <li>Cassandra</li>
-                                                                <li>Cloud Google (Cloud Servers, Cloud Storage, PubSub,
-                                                                    BigQuery)
-                                                                </li>
+                                                                <li>Cloud Google (Cloud Servers, Cloud Storage, PubSub, BigQuery)</li>
                                                             </ul>
                                                         </li>
                                                     </ul>
@@ -592,11 +660,12 @@
                                                     <div class="date-range">November 2016</div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Niji</h3>
-                                                    <h4>Symfony developer (Consultant)</h4>
+                                                    <h4><span class="lang-fr">Développeur Symfony (Consultant)</span><span class="lang-en">Symfony developer (Consultant)</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Improving www.sitnstart.fr</li>
+                                                        <li class="lang-fr">Amélioration de www.sitnstart.fr</li>
+                                                        <li class="lang-en">Improving www.sitnstart.fr</li>
                                                         <li>Symfony 2 Angular JS, LXC</li>
                                                     </ul>
                                                 </div>
@@ -605,17 +674,15 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Summer 2016</div>
-                                                    <h4 style="float: right; clear:both; font-size: 14px"><i>Singapore
-                                                            (remote)</i></h4>
+                                                    <div class="date-range"><span class="lang-fr">Été 2016</span><span class="lang-en">Summer 2016</span></div>
+                                                    <h4 style="float: right; clear:both; font-size: 14px"><i><span class="lang-fr">Singapour (à distance)</span><span class="lang-en">Singapore (remote)</span></i></h4>
                                                     <h3>Tutoroo.co</h3>
-                                                    <h4>Senior Full Stack Developer</h4>
+                                                    <h4><span class="lang-fr">Développeur Full Stack Senior</span><span class="lang-en">Senior Full Stack Developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Asian marketplace connecting students with qualified tutors
-                                                            nearby
-                                                        </li>
+                                                        <li class="lang-fr">Marketplace asiatique reliant étudiants et professeurs qualifiés à proximité</li>
+                                                        <li class="lang-en">Asian marketplace connecting students with qualified tutors nearby</li>
                                                         <li>PHP7, Symfony2, Sass, ElasticSearch, GoogleMap Geocoder</li>
                                                         <li>AWS (S3, EC2), Travis</li>
                                                     </ul>
@@ -625,18 +692,18 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Spring 2016</div>
+                                                    <div class="date-range"><span class="lang-fr">Printemps 2016</span><span class="lang-en">Spring 2016</span></div>
                                                     <h4 class="location">San Francisco</h4>
                                                     <h3>MyJiminy</h3>
-                                                    <h4>Lead Engineer - Back-end Developer</h4>
+                                                    <h4><span class="lang-fr">Lead Engineer - Développeur back-end</span><span class="lang-en">Lead Engineer - Back-end Developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Recruitment website for the film industry</li>
-                                                        <li>Technical lead &amp; Scrum Master</li>
-                                                        <li>PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt,
-                                                            browserify)
-                                                        </li>
+                                                        <li class="lang-fr">Site de recrutement pour l'industrie du cinéma</li>
+                                                        <li class="lang-en">Recruitment website for the film industry</li>
+                                                        <li class="lang-fr">Lead technique &amp; Scrum Master</li>
+                                                        <li class="lang-en">Technical lead &amp; Scrum Master</li>
+                                                        <li>PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt, browserify)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -644,17 +711,19 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">Winter 2015</div>
+                                                    <div class="date-range"><span class="lang-fr">Hiver 2015</span><span class="lang-en">Winter 2015</span></div>
                                                     <h4 class="location">Lyon</h4>
                                                     <h3>GetProfiles</h3>
-                                                    <h4>Back-end Developer</h4>
+                                                    <h4><span class="lang-fr">Développeur back-end</span><span class="lang-en">Back-end Developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Python - Big Data management</li>
-                                                        <li>AWS Admin</li>
-                                                        <li>PHP5/Angular.js developments for <a
-                                                                href="https://getprofiles.net/">GetProfiles.net</a></li>
+                                                        <li class="lang-fr">Python - Gestion Big Data</li>
+                                                        <li class="lang-en">Python - Big Data management</li>
+                                                        <li class="lang-fr">Administration AWS</li>
+                                                        <li class="lang-en">AWS Admin</li>
+                                                        <li class="lang-fr">Développements PHP5/Angular.js pour <a href="https://getprofiles.net/">GetProfiles.net</a></li>
+                                                        <li class="lang-en">PHP5/Angular.js developments for <a href="https://getprofiles.net/">GetProfiles.net</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -663,18 +732,19 @@
                                             <div class="exp-holder">
                                                 <div class="head">
                                                     <div class="date-range">2015</div>
-                                                    <h4 class="location">China (remote)</h4>
+                                                    <h4 class="location"><span class="lang-fr">Chine (à distance)</span><span class="lang-en">China (remote)</span></h4>
                                                     <h3>Coopong</h3>
-                                                    <h4>Back-end developer &amp; Scrum master</h4>
+                                                    <h4><span class="lang-fr">Développeur back-end &amp; Scrum master</span><span class="lang-en">Back-end developer &amp; Scrum master</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Mobile apps and PHP Back-end for Chinese market</li>
-                                                        <li>Technical lead, agile project planning</li>
-                                                        <li>PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API,
-                                                            Ping payment)
-                                                        </li>
-                                                        <li>Linux system administration (Debian, Nginx, MariaDB)</li>
+                                                        <li class="lang-fr">Applications mobiles et back-end PHP pour le marché chinois</li>
+                                                        <li class="lang-en">Mobile apps and PHP Back-end for Chinese market</li>
+                                                        <li class="lang-fr">Lead technique, planification de projet agile</li>
+                                                        <li class="lang-en">Technical lead, agile project planning</li>
+                                                        <li>PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API, Ping payment)</li>
+                                                        <li class="lang-fr">Administration système Linux (Debian, Nginx, MariaDB)</li>
+                                                        <li class="lang-en">Linux system administration (Debian, Nginx, MariaDB)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -683,41 +753,46 @@
                                             <div class="exp-holder">
                                                 <div class="head">
                                                     <div class="date-range">2011-2014</div>
-                                                    <h4 class="location">London</h4>
+                                                    <h4 class="location"><span class="lang-fr">Londres</span><span class="lang-en">London</span></h4>
                                                     <h3>IOVOX</h3>
-                                                    <h4>Senior Full Stack Developer</h4>
+                                                    <h4><span class="lang-fr">Développeur Full Stack Senior</span><span class="lang-en">Senior Full Stack Developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Developing a <a href="https://www.voxanalytics.com/">Call
-                                                                Analytic Web platform</a> for large businesses
-                                                        </li>
-                                                        <li>Build and integrate APIs providing Big Data reports</li>
-                                                        <li>R&D on various domains related to telecoms</li>
-                                                        <li>Click to call solution</li>
-                                                        <li>Web/Call tracking via Javascript API</li>
-                                                        <li>Analyzing customer's process and provide dedicated tools
-                                                        </li>
-                                                        <li>Projects with VOIP technologies, SIP and networks</li>
-                                                        <li>Linux administration, Data Warehouse storage optimisation
-                                                        </li>
-                                                        <li>Quality development techniques, providing unit tests, APIs
-                                                            tests
-                                                            and UI tests
-                                                        </li>
-                                                        <li>Customer technical support, periodically in charge of 2nd
-                                                            Line
-                                                            support
-                                                        </li>
-                                                        <li>Customer relationship with UK and France</li>
-                                                        <li>Juniors training, management and code reviews</li>
-                                                        <li>Being part of a successful Start-up team, grown from 8
-                                                            employees
-                                                            when I arrive to over 30 in 2014
-                                                        </li>
+                                                        <li class="lang-fr">Développement d'une <a href="https://www.voxanalytics.com/">plateforme web d'analyse d'appels</a> pour grandes entreprises</li>
+                                                        <li class="lang-en">Developing a <a href="https://www.voxanalytics.com/">Call Analytic Web platform</a> for large businesses</li>
+                                                        <li class="lang-fr">Construction et intégration d'API fournissant des rapports Big Data</li>
+                                                        <li class="lang-en">Build and integrate APIs providing Big Data reports</li>
+                                                        <li class="lang-fr">R&amp;D sur divers domaines liés aux télécoms</li>
+                                                        <li class="lang-en">R&amp;D on various domains related to telecoms</li>
+                                                        <li class="lang-fr">Solution de click-to-call</li>
+                                                        <li class="lang-en">Click to call solution</li>
+                                                        <li class="lang-fr">Suivi web/appels via API Javascript</li>
+                                                        <li class="lang-en">Web/Call tracking via Javascript API</li>
+                                                        <li class="lang-fr">Analyse des processus clients et fourniture d'outils dédiés</li>
+                                                        <li class="lang-en">Analyzing customer's process and provide dedicated tools</li>
+                                                        <li class="lang-fr">Projets avec technologies VOIP, SIP et réseaux</li>
+                                                        <li class="lang-en">Projects with VOIP technologies, SIP and networks</li>
+                                                        <li class="lang-fr">Administration Linux, optimisation du stockage Data Warehouse</li>
+                                                        <li class="lang-en">Linux administration, Data Warehouse storage optimisation</li>
+                                                        <li class="lang-fr">Techniques de développement qualité : tests unitaires, tests d'API et tests UI</li>
+                                                        <li class="lang-en">Quality development techniques, providing unit tests, APIs tests and UI tests</li>
+                                                        <li class="lang-fr">Support technique client, en charge périodiquement du support de niveau 2</li>
+                                                        <li class="lang-en">Customer technical support, periodically in charge of 2nd Line support</li>
+                                                        <li class="lang-fr">Relation client au Royaume-Uni et en France</li>
+                                                        <li class="lang-en">Customer relationship with UK and France</li>
+                                                        <li class="lang-fr">Formation de juniors, management et revues de code</li>
+                                                        <li class="lang-en">Juniors training, management and code reviews</li>
+                                                        <li class="lang-fr">Membre d'une équipe startup à succès, passée de 8 employés à mon arrivée à plus de 30 en 2014</li>
+                                                        <li class="lang-en">Being part of a successful Start-up team, grown from 8 employees when I arrive to over 30 in 2014</li>
                                                     </ul>
-                                                    <p>
-
+                                                    <p class="lang-fr">
+                                                        <a href="https://iovox.com">Iovox.com</a> fournit des numéros de téléphone intelligents
+                                                        aux entreprises et à des centaines de milliers de petites sociétés,
+                                                        leur offrant de meilleures analyses marketing sur les appels téléphoniques, les SMS et
+                                                        les interactions clients.
+                                                    </p>
+                                                    <p class="lang-en">
                                                         <a href="https://iovox.com">Iovox.com</a> provide smart phone
                                                         numbers
                                                         to enterprises and hundreds of thousands of small businesses,
@@ -733,21 +808,18 @@
                                             <div class="exp-holder">
                                                 <div class="head">
                                                     <div class="date-range">2010</div>
-                                                    <h4 class="location">Montreal</h4>
+                                                    <h4 class="location"><span class="lang-fr">Montréal</span><span class="lang-en">Montreal</span></h4>
                                                     <h3>HPJ Solutions inc</h3>
-                                                    <h4>PHP/Java developer</h4>
+                                                    <h4><span class="lang-fr">Développeur PHP/Java</span><span class="lang-en">PHP/Java developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Improvements on <a href="https://www.hpjcc.com/">HPJCC</a>,
-                                                            a
-                                                            mass e-mailing manager using Java and PHP/Zend Framework
-                                                        </li>
-                                                        <li>Developing Website "<a
-                                                                href="https://www.marcheducourage.ca/">Walk
-                                                                of Courage</a>" (PHP/Joomla)
-                                                        </li>
-                                                        <li>Administration and optimization of CentOS servers</li>
+                                                        <li class="lang-fr">Améliorations sur <a href="https://www.hpjcc.com/">HPJCC</a>, un gestionnaire d'e-mailing de masse en Java et PHP/Zend Framework</li>
+                                                        <li class="lang-en">Improvements on <a href="https://www.hpjcc.com/">HPJCC</a>, a mass e-mailing manager using Java and PHP/Zend Framework</li>
+                                                        <li class="lang-fr">Développement du site "<a href="https://www.marcheducourage.ca/">Walk of Courage</a>" (PHP/Joomla)</li>
+                                                        <li class="lang-en">Developing Website "<a href="https://www.marcheducourage.ca/">Walk of Courage</a>" (PHP/Joomla)</li>
+                                                        <li class="lang-fr">Administration et optimisation de serveurs CentOS</li>
+                                                        <li class="lang-en">Administration and optimization of CentOS servers</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -758,17 +830,19 @@
                                                     <div class="date-range">2009</div>
                                                     <h4 class="location">Guérande</h4>
                                                     <h3>Image-WebDesign</h3>
-                                                    <h4>PHP / iOS junior developer</h4>
+                                                    <h4><span class="lang-fr">Développeur junior PHP / iOS</span><span class="lang-en">PHP / iOS junior developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li>Coding recruitment website
-                                                            (<a href="https://jobartisans.com">jobartisans.com</a>)
-                                                        </li>
+                                                        <li class="lang-fr">Développement d'un site de recrutement (<a href="https://jobartisans.com">jobartisans.com</a>)</li>
+                                                        <li class="lang-en">Coding recruitment website (<a href="https://jobartisans.com">jobartisans.com</a>)</li>
                                                         <li>E-commerce</li>
-                                                        <li>iPhone apps R&D</li>
-                                                        <li>Various Web projects fixes & new features</li>
-                                                        <li>Linux (Debian) monitoring</li>
+                                                        <li class="lang-fr">R&amp;D applications iPhone</li>
+                                                        <li class="lang-en">iPhone apps R&amp;D</li>
+                                                        <li class="lang-fr">Corrections et nouvelles fonctionnalités sur divers projets web</li>
+                                                        <li class="lang-en">Various Web projects fixes &amp; new features</li>
+                                                        <li class="lang-fr">Supervision Linux (Debian)</li>
+                                                        <li class="lang-en">Linux (Debian) monitoring</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -787,7 +861,7 @@
                                     <i class="icon-book"></i>
                                 </div>
                                 <div class="title">
-                                    <h4>EDUCATION</h4>
+                                    <h4><span class="lang-fr">FORMATION</span><span class="lang-en">EDUCATION</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -804,7 +878,11 @@
                                                     <h4>Exia</h4>
                                                 </div>
                                                 <div class="body">
-                                                    <p>
+                                                    <p class="lang-fr">
+                                                        2012 - Management de projet informatique &amp; Architecte logiciel
+                                                        <br /> 2009 - Licence en génie logiciel
+                                                    </p>
+                                                    <p class="lang-en">
                                                         2012 - IT Project Management & Software Architect
                                                         <br /> 2009 - Bachelor of Software Engineering
                                                     </p>
@@ -816,11 +894,14 @@
                                                 <div class="head">
                                                     <div class="date-range">2005-2007</div>
                                                     <h4 class="location">Gu&eacute;rande</h4>
-                                                    <h3>High School</h3>
+                                                    <h3><span class="lang-fr">Lycée</span><span class="lang-en">High School</span></h3>
                                                     <h4>&nbsp;</h4>
                                                 </div>
                                                 <div class="body">
-                                                    <p>
+                                                    <p class="lang-fr">
+                                                        BAC S, sciences de l'ingénieur
+                                                    </p>
+                                                    <p class="lang-en">
                                                         BAC S, Engineering sciences general
                                                     </p>
                                                 </div>
@@ -845,6 +926,35 @@
     <script type="text/javascript" src="js/jquery.validate.js"></script>
     <script type="text/javascript" src="js/gmap3.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        // FR / EN language switch
+        (function () {
+            function setLang(lang) {
+                document.documentElement.setAttribute('data-lang', lang);
+                document.documentElement.setAttribute('lang', lang);
+                try { localStorage.setItem('cv-lang', lang); } catch (e) {}
+                var btns = document.querySelectorAll('[data-set-lang]');
+                for (var i = 0; i < btns.length; i++) {
+                    var isActive = btns[i].getAttribute('data-set-lang') === lang;
+                    if (btns[i].classList) {
+                        btns[i].classList.toggle('active', isActive);
+                    } else {
+                        btns[i].className = isActive ? 'active' : '';
+                    }
+                }
+            }
+            var buttons = document.querySelectorAll('[data-set-lang]');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    setLang(this.getAttribute('data-set-lang'));
+                });
+            }
+            var saved = 'fr';
+            try { saved = localStorage.getItem('cv-lang') || 'fr'; } catch (e) {}
+            setLang(saved);
+        })();
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2529665-7"></script>
     <script>
     < !--Global site tag(gtag.js) - Google Analytics-- >
