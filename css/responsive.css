@@ -6,13 +6,6 @@
 }
 
 @media all and (min-width:760px) and (max-width:820px){
-
-
-.exp-item {
-
-    width: 89%;
-}
-
     .box-holder:before {
 
         left: -7px;
@@ -89,9 +82,6 @@
 
 }
 
-@media all and (min-width:1px) and (max-width:490px){
-
-}
 @media all and (min-width:801px){
     .nav.normal{
         display: block;
@@ -100,45 +90,63 @@
         display: none;
     }
 }
-@media all and (min-width:1px) and (max-width:800px){
-    .nav.normal{
+/* Vue mobile épurée jusqu'à 800px (seuil desktop du template = 801px).
+   On force l'empilement des colonnes sur 768-800px (Bootstrap ne les empile
+   que <=767px), puis on masque menu déroulant + titres/icônes de section. */
+@media all and (min-width:768px) and (max-width:800px){
+    .row-fluid > [class*="span"]{
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+@media all and (max-width:800px){
+    .avatar{
+        float: none;
+        width: 50%;
+        margin: 0 auto 20px;
+    }
+    /* Header épuré : on masque le bloc menu (span7) et le bloc d'icônes
+       de partage (span2) ; on garde les icônes de la carte profil. */
+    .cv-title .span7,
+    .cv-title .span2{
         display: none;
     }
-    .nav.dropdown{
-        display: block;
+    .resume-holder{
+        padding: 12px 12px 20px;
+    }
+    .section-title,
+    #skills .section-title{
+        display: none;
+    }
+    /* Resserrement vertical : les titres de section étant masqués, on supprime
+       les grands espaces qui leur étaient réservés. */
+    section{
+        margin-top: 4px;
+    }
+    section .box-holder{
+        margin-top: 4px;
+    }
+    .exp-item{
+        padding-bottom: 22px;
+    }
+    /* Marge réduite sous la bannière (titre) -> carte profil */
+    #about{
+        margin-top: 2px;
+    }
+    #about .box-holder{
+        margin-top: 4px;
     }
 }
 @media all and (min-width:400px) and (max-width:790px){
-
     #about .desc{
         margin-top: 10px;
     }
-.exp-item {
-
-    width: 99%;
-}
-
-
-
 }
 @media all and (min-width:300px) and (max-width:620px){
-    .about-desc{
-        margin-top: 10px;
-    }
-    .contact-form {
-        margin: 0 auto 30px auto;
-        width: 90%;
-    }
-    .contact-form-holder{
-        padding-bottom: 30px;
-    }
-    .section-icon {
-        text-align: center;
-        margin: 30px auto 0;
-
-    }
-
-
     .box-holder:before{
         content: "";
         position: absolute;
@@ -155,15 +163,19 @@ margin-left: -10px;
     }
 
     .date-range {
+        float: none;
         display: inline-block;
         padding: 2px 5px;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .location {
+        float: none;
+        display: block;
+        padding-right: 0;
     }
     section .box-holder {
         margin-left: 0px;
-    }
-    .nav-menu{
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
     }
 
     .timeline-holder {
@@ -179,23 +191,9 @@ margin-left: -10px;
         font-size: 15px;
     }
 
-    .avatar {
-
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .avatar{
-        width:50%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
     .resume-holder{
-        width: 90%;
-        margin: 30px auto;
+        width: 96%;
+        margin: 16px auto;
     }
 
 
@@ -224,10 +222,6 @@ margin-left: -10px;
 .exp-holder h3,.exp-holder h4{
     margin: 5px 0;
 }
-.section-icon {
-    margin: 30px auto 0;
-    text-align: center;
-}
     .social-icons {
         margin: 10px 0 10px 0;
         text-align: center;
@@ -240,15 +234,8 @@ margin-left: -10px;
 
     font-size: 15px;
 }
-    .exp-item .text-holder{
-        width: 90%;
-    }
     .round-row {
         font-size: 15px;
-    }
-    .contact-form{
-        margin: 0 auto 20px auto;
-        width: 80%;
     }
     .cv-title h1 {
 
@@ -260,18 +247,9 @@ margin-left: -10px;
         text-align: center;
 
     }
-    .section-title h2 {
-        font-size: 24px;
-    }
 
     .resume-holder {
-        margin: 30px auto;
-        width: 82%;
+        margin: 16px auto;
+        width: 96%;
     }
-}
-
-@media all and (min-width:700px) and (max-width:790px){
-.exp-item {
-    width: 89%;
-}
 }

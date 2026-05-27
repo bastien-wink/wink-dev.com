@@ -466,6 +466,9 @@ section:first-child {
 .timeline-holder {
     margin-top: 15px;
     margin-left: 20px;
+    /* width:auto (au lieu du 100% de .row-fluid) pour que la marge gauche
+       ne pousse pas la timeline hors du cadre */
+    width: auto;
 }
 
 .exp-holder:before {
@@ -548,7 +551,9 @@ section:first-child {
     border-color: #eb5242;
     padding-left: 30px;
     padding-bottom: 50px;
-    width: 91%;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .contact-form .control-group {
