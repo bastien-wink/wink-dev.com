@@ -4,7 +4,7 @@
     "role_fr": "Lead Dev PHP / Symfony · Expertise IA",
     "role_site_fr": "DEV SENIOR & EXPERTISE IA",
     "role_site_en": "SENIOR DEV & AI ARCHITECT",
-    "role_print": "Senior Developer & Software Architect - Backend / IA",
+    "role_print": "Développeur Senior · Architecture Backend & IA en production",
     "location": "Nantes, France",
     "email": "contact@wink-dev.com",
     "phone": "+33652670306",
@@ -26,8 +26,7 @@
       "I design and bring <b>AI to production</b> (<b>LLM</b>, <b>RAG</b>, multi-agent orchestration, <b>MCP</b> development) to build business assistants, automate tech processes and unlock the value of data.",
       "I also work on <b>project management</b> and <b>agile coaching</b>. Master's in <b>Software Architecture &amp; IT Management</b>, certified Scrum Master (PSM I).",
       "Based in <b>Nantes</b>, available remotely or on site."
-    ],
-    "print_fr": "Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end. Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit DevOps (Cloud, conteneurs, Linux) et une exigence forte de qualité de code et d'automatisation des tests. J'accompagne les entreprises dans l'<b>intégration d'IA en production</b> (LLM, RAG, orchestration multi-agents, création de MCP) pour développer des assistants métiers, automatiser des processus tech et valoriser la donnée. J'interviens également en pilotage de projet et en accompagnement agile."
+    ]
   },
   "skills_site": [
     [
@@ -97,20 +96,20 @@
   ],
   "skills_print": [
     {
-      "k": "Back-end & API",
-      "v": "Développement back-end, conception d'API · PHP (Symfony, Laravel) · Python"
-    },
-    {
-      "k": "IA & LLM",
-      "v": "LLM, RAG, orchestration multi-agents, création de MCP · human-in-the-loop, maîtrise des coûts et de la latence · pilotage de projets IA"
-    },
-    {
-      "k": "Données",
-      "v": "PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI, ETL, Data Warehouse"
+      "k": "Back-end / web",
+      "v": "PHP (Symfony, Laravel) · Python · Conception API · industrialisation et scalabilité"
     },
     {
       "k": "Architecture",
-      "v": "Architecture logicielle, systèmes distribués, microservices · conception asynchrone et files (RabbitMQ) · industrialisation et scalabilité"
+      "v": "Conception et spécification · Systèmes distribués, microservices, asynchrone"
+    },
+    {
+      "k": "IA",
+      "v": "Local LLM, RAG, orchestration multi-agents, création de MCP · Cloud LLM & maîtrise des coûts"
+    },
+    {
+      "k": "Données",
+      "v": "PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI · ETL"
     },
     {
       "k": "DevOps & Cloud",
@@ -118,11 +117,11 @@
     },
     {
       "k": "Front-end",
-      "v": "JavaScript · React · Vue · React Native"
+      "v": "JS/TS/CSS · React · Vue · React Native"
     },
     {
       "k": "Méthode & pilotage",
-      "v": "Gestion de projet, Scrum (PSM I) · clean code / Craft, tests automatisés, revues de code, formation d'équipes · lancement de startup, levée de fonds"
+      "v": "Gestion de projet, management produit, Scrum · clean code, Craft, tests automatisés · lead technique, mentorat, formation d'équipes · lancement de startup, levée de fonds"
     }
   ],
   "jobs": [

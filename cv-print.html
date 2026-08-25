@@ -31,30 +31,45 @@
   .masthead {
     background: #16324f;
     color: #fff;
-    padding: 10mm 14mm 6.5mm 14mm;
+    padding: 8mm 14mm 8mm 14mm;
     margin: 0 -14mm 4.5mm -14mm;
+    display: flex;
+    align-items: center;
+    gap: 6mm;
   }
+  .photo {
+    flex: 0 0 auto;
+    width: 24mm;
+    height: 24mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.2pt solid #8fd0d6;
+  }
+  .head-block { flex: 1 1 auto; }
   .name {
-    font-size: 24pt;
+    font-size: 22pt;
     font-weight: 700;
     letter-spacing: -0.4pt;
     line-height: 1;
     margin: 0;
   }
   .role {
-    font-size: 10.8pt;
+    font-size: 9.4pt;
     color: #8fd0d6;
     font-weight: 600;
-    letter-spacing: 0.3pt;
-    margin: 2.5mm 0 4mm 0;
+    letter-spacing: 0.1pt;
+    margin: 2.5mm 0 0 0;
   }
   .contact {
-    font-size: 8.6pt;
+    flex: 0 0 auto;
+    font-size: 8.4pt;
     color: #cdd8e2;
     letter-spacing: 0.1pt;
+    text-align: right;
+    line-height: 1.65;
   }
-  .contact span { white-space: nowrap; }
-  .sep { color: #4d7096; padding: 0 2.2mm; }
+  .contact div { white-space: nowrap; }
+  .sep { color: #4d7096; padding: 0 1.6mm; }
 
   /* ---------- SECTIONS ---------- */
   h2 {
@@ -124,27 +139,36 @@
 <body>
 
 <div class="masthead">
-  <div class="name">Bastien Thomas</div>
-  <div class="role">Senior Developer & Software Architect - Backend / IA</div>
+  <img class="photo" src="images/avatar2.jpg" alt="Bastien Thomas" />
+  <div class="head-block">
+    <div class="name">Bastien Thomas</div>
+    <div class="role">Développeur Senior · Architecture Backend & IA en production</div>
+  </div>
   <div class="contact">
-    <span>Nantes, France</span><span class="sep">|</span><span>Remote ou sur site</span><span class="sep">|</span><span>contact@wink-dev.com</span><span class="sep">|</span><span>wink-dev.com</span><span class="sep">|</span><span>linkedin.com/in/bastienthomas</span>
+    <div>contact@wink-dev.com</div>
+    <div>Nantes, France<span class="sep">|</span>Remote ou sur site</div>
+    <div>wink-dev.com<span class="sep">|</span>linkedin.com/in/bastienthomas</div>
   </div>
 </div>
 
 <h2>Profil</h2>
 <p class="profile" style="margin:0">
-Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end. Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit DevOps (Cloud, conteneurs, Linux) et une exigence forte de qualité de code et d'automatisation des tests. J'accompagne les entreprises dans l'<b>intégration d'IA en production</b> (LLM, RAG, orchestration multi-agents, création de MCP) pour développer des assistants métiers, automatiser des processus tech et valoriser la donnée. J'interviens également en pilotage de projet et en accompagnement agile.
+Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end.<br><br>
+Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Je suis spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit <b>DevOps</b> (<b>Cloud</b>, conteneurs, <b>Linux</b>) et une exigence forte de <b>qualité de code</b> et <b>automatisation des tests</b>.<br><br>
+Je conçois et intègre l'<b>IA en production</b> (<b>LLM</b>, <b>RAG</b>, orchestration multi-agents, création de <b>MCP</b>) pour créer des assistants métiers, automatiser des processus tech et valoriser les données.<br><br>
+J'interviens également en <b>pilotage de projet</b> et en <b>accompagnement agile</b>. Master en <b>Architecture logicielle &amp; Management de projet</b> et certifié Scrum Master (PSM I).<br><br>
+Basé à <b>Nantes</b>, je travaille en remote ou sur site.
 </p>
 
 <h2>Compétences</h2>
 <table class="skills">
-  <tr><td class="k">Back-end &amp; API</td><td class="v">Développement back-end, conception d'API · PHP (Symfony, Laravel) · Python</td></tr>
-  <tr><td class="k">IA &amp; LLM</td><td class="v">LLM, RAG, orchestration multi-agents, création de MCP · human-in-the-loop, maîtrise des coûts et de la latence · pilotage de projets IA</td></tr>
-  <tr><td class="k">Données</td><td class="v">PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI, ETL, Data Warehouse</td></tr>
-  <tr><td class="k">Architecture</td><td class="v">Architecture logicielle, systèmes distribués, microservices · conception asynchrone et files (RabbitMQ) · industrialisation et scalabilité</td></tr>
+  <tr><td class="k">Back-end / web</td><td class="v">PHP (Symfony, Laravel) · Python · Conception API · industrialisation et scalabilité</td></tr>
+  <tr><td class="k">Architecture</td><td class="v">Conception et spécification · Systèmes distribués, microservices, asynchrone</td></tr>
+  <tr><td class="k">IA</td><td class="v">Local LLM, RAG, orchestration multi-agents, création de MCP · Cloud LLM &amp; maîtrise des coûts</td></tr>
+  <tr><td class="k">Données</td><td class="v">PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI · ETL</td></tr>
   <tr><td class="k">DevOps &amp; Cloud</td><td class="v">Administration Linux · Docker · scripting · gestion de serveurs (AWS, GCP) · monitoring · CI/CD</td></tr>
-  <tr><td class="k">Front-end</td><td class="v">JavaScript · React · Vue · React Native</td></tr>
-  <tr><td class="k">Méthode &amp; pilotage</td><td class="v">Gestion de projet, Scrum (PSM I) · clean code / Craft, tests automatisés, revues de code, formation d'équipes · lancement de startup, levée de fonds</td></tr>
+  <tr><td class="k">Front-end</td><td class="v">JS/TS/CSS · React · Vue · React Native</td></tr>
+  <tr><td class="k">Méthode &amp; pilotage</td><td class="v">Gestion de projet, management produit, Scrum · clean code, Craft, tests automatisés · lead technique, mentorat, formation d'équipes · lancement de startup, levée de fonds</td></tr>
 </table>
 
 <h2>Expérience</h2>

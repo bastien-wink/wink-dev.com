@@ -25,30 +25,45 @@
   .masthead {
     background: #16324f;
     color: #fff;
-    padding: 10mm 14mm 6.5mm 14mm;
+    padding: 8mm 14mm 8mm 14mm;
     margin: 0 -14mm 4.5mm -14mm;
+    display: flex;
+    align-items: center;
+    gap: 6mm;
   }
+  .photo {
+    flex: 0 0 auto;
+    width: 24mm;
+    height: 24mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.2pt solid #8fd0d6;
+  }
+  .head-block { flex: 1 1 auto; }
   .name {
-    font-size: 24pt;
+    font-size: 22pt;
     font-weight: 700;
     letter-spacing: -0.4pt;
     line-height: 1;
     margin: 0;
   }
   .role {
-    font-size: 10.8pt;
+    font-size: 9.4pt;
     color: #8fd0d6;
     font-weight: 600;
-    letter-spacing: 0.3pt;
-    margin: 2.5mm 0 4mm 0;
+    letter-spacing: 0.1pt;
+    margin: 2.5mm 0 0 0;
   }
   .contact {
-    font-size: 8.6pt;
+    flex: 0 0 auto;
+    font-size: 8.4pt;
     color: #cdd8e2;
     letter-spacing: 0.1pt;
+    text-align: right;
+    line-height: 1.65;
   }
-  .contact span { white-space: nowrap; }
-  .sep { color: #4d7096; padding: 0 2.2mm; }
+  .contact div { white-space: nowrap; }
+  .sep { color: #4d7096; padding: 0 1.6mm; }
 
   /* ---------- SECTIONS ---------- */
   h2 {

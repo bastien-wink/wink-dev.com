@@ -203,16 +203,21 @@ ${css}
 <body>
 
 <div class="masthead">
-  <div class="name">${m.name}</div>
-  <div class="role">${m.role_print}</div>
+  <img class="photo" src="images/avatar2.jpg" alt="${m.name}" />
+  <div class="head-block">
+    <div class="name">${m.name}</div>
+    <div class="role">${m.role_print}</div>
+  </div>
   <div class="contact">
-    <span>${m.location}</span><span class="sep">|</span><span>Remote ou sur site</span><span class="sep">|</span><span>${m.email}</span><span class="sep">|</span><span>${m.website}</span><span class="sep">|</span><span>${m.linkedin}</span>
+    <div>${m.email}</div>
+    <div>${m.location}<span class="sep">|</span>Remote ou sur site</div>
+    <div>${m.website}<span class="sep">|</span>${m.linkedin}</div>
   </div>
 </div>
 
 <h2>Profil</h2>
 <p class="profile" style="margin:0">
-${cv.profile.print_fr}
+${cv.profile.fr.join('<br><br>\n')}
 </p>
 
 <h2>Compétences</h2>
