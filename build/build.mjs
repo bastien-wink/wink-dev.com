@@ -94,7 +94,6 @@ function renderExperiencesSite() {
       ? `<h4>${esc(job.title_fr)}</h4>`
       : `<h4><span class="lang-fr">${esc(job.title_fr)}</span><span class="lang-en">${esc(job.title_en)}</span></h4>`;
     const bulletLines = [];
-    if (job.stack) bulletLines.push(`                                                        <li>${esc(job.stack)}</li>`);
     for (const b of job.bullets) {
       if (b.fr === b.en) {
         bulletLines.push(`                                                        <li>${esc(b.fr)}</li>`);
@@ -149,10 +148,8 @@ function buildIndex() {
 // ---------- cv-print.html ----------
 function renderJobsPrint() {
   return cv.jobs.filter(j => j.print).map(job => {
-    // print_bullets overrides bullets when the site's per-tech breakdown just duplicates `stack`
     const src = job.print_bullets !== undefined ? job.print_bullets : job.bullets.map(b => b.fr);
     const items = src.map(esc);
-    if (job.stack) items.push(esc(job.stack));
     const ul = items.length
       ? `\n  <ul>\n${items.map(b => `    <li>${b}</li>`).join('\n')}\n  </ul>`
       : '';
