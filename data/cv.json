@@ -1,0 +1,786 @@
+{
+  "meta": {
+    "name": "Bastien Thomas",
+    "role_fr": "Lead Dev PHP / Symfony · Expertise IA",
+    "role_site_fr": "DEV SENIOR & EXPERTISE IA",
+    "role_site_en": "SENIOR DEV & AI ARCHITECT",
+    "role_print": "Senior Developer & Software Architect - Backend / IA",
+    "location": "Nantes, France",
+    "email": "contact@wink-dev.com",
+    "phone": "+33652670306",
+    "website": "wink-dev.com",
+    "linkedin": "linkedin.com/in/bastienthomas",
+    "github": "github.com/bastien-wink"
+  },
+  "profile": {
+    "fr": [
+      "Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end.",
+      "Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Je suis spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit <b>DevOps</b> (<b>Cloud</b>, conteneurs, <b>Linux</b>) et une exigence forte de <b>qualité de code</b> et <b>automatisation des tests</b>.",
+      "Je conçois et intègre l'<b>IA en production</b> (<b>LLM</b>, <b>RAG</b>, orchestration multi-agents, création de <b>MCP</b>) pour créer des assistants métiers, automatiser des processus tech et valoriser les données.",
+      "J'interviens également en <b>pilotage de projet</b> et en <b>accompagnement agile</b>. Master en <b>Architecture logicielle &amp; Management de projet</b> et certifié Scrum Master (PSM I).",
+      "Basé à <b>Nantes</b>, je travaille en remote ou sur site."
+    ],
+    "en": [
+      "<b>Lead Dev &amp; Software Architect</b> consultant, <b>15 years of experience</b> in <b>development</b> and <b>back-end architecture</b>.",
+      "Since 2010, I've supported the growth of startups and companies in London, San Francisco, Paris and now Nantes. I specialise in <b>API design</b>, the <b>PHP / Symfony</b> ecosystem, <b>distributed systems</b> and <b>scalability</b>, with a <b>DevOps</b> mindset (<b>Cloud</b>, containers, <b>Linux</b>) and a strong focus on <b>code quality</b> and <b>test automation</b>.",
+      "I design and bring <b>AI to production</b> (<b>LLM</b>, <b>RAG</b>, multi-agent orchestration, <b>MCP</b> development) to build business assistants, automate tech processes and unlock the value of data.",
+      "I also work on <b>project management</b> and <b>agile coaching</b>. Master's in <b>Software Architecture &amp; IT Management</b>, certified Scrum Master (PSM I).",
+      "Based in <b>Nantes</b>, available remotely or on site."
+    ],
+    "print_fr": "Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end. Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit DevOps (Cloud, conteneurs, Linux) et une exigence forte de qualité de code et d'automatisation des tests. J'accompagne les entreprises dans l'<b>intégration d'IA en production</b> (LLM, RAG, orchestration multi-agents, création de MCP) pour développer des assistants métiers, automatiser des processus tech et valoriser la donnée. J'interviens également en pilotage de projet et en accompagnement agile."
+  },
+  "skills_site": [
+    [
+      {
+        "level": 99,
+        "fr": "Développement back-end - Conception d'API",
+        "en": "Back-end development - API design"
+      },
+      {
+        "level": 97,
+        "fr": "PHP (Symfony / Laravel) - Python",
+        "en": "PHP (Symfony / Laravel) - Python"
+      },
+      {
+        "level": 90,
+        "fr": "Administration Linux - Docker - Scripting",
+        "en": "Linux administration - Docker - Scripting"
+      },
+      {
+        "level": 90,
+        "fr": "PostgreSQL - MariaDB - Elasticsearch - Cassandra",
+        "en": "PostgreSQL - MariaDB - Elasticsearch - Cassandra"
+      },
+      {
+        "level": 85,
+        "fr": "Gestion de serveurs (AWS / GCP) - Monitoring",
+        "en": "Server management (AWS / GCP) - Monitoring"
+      },
+      {
+        "level": 70,
+        "fr": "Front-end - JS / React / Vue",
+        "en": "Front-end - JS / React / Vue"
+      }
+    ],
+    [
+      {
+        "level": 95,
+        "fr": "Architecture logicielle - Pilotage de projets IA",
+        "en": "Software architect - AI project management"
+      },
+      {
+        "level": 92,
+        "fr": "Gestion de projet - Scrum",
+        "en": "Project management - Scrum"
+      },
+      {
+        "level": 90,
+        "fr": "Conception asynchrone - RabbitMQ",
+        "en": "Asynchronous design - RabbitMQ"
+      },
+      {
+        "level": 88,
+        "fr": "Analyse de données - BI",
+        "en": "Data analysis - BI"
+      },
+      {
+        "level": 87,
+        "fr": "Industrialisation - Scalabilité",
+        "en": "Scalability"
+      },
+      {
+        "level": 80,
+        "fr": "Lancement startup - Levée de fonds",
+        "en": "Startup launch - Fundraising"
+      }
+    ]
+  ],
+  "skills_print": [
+    {
+      "k": "Back-end & API",
+      "v": "Développement back-end, conception d'API · PHP (Symfony, Laravel) · Python"
+    },
+    {
+      "k": "IA & LLM",
+      "v": "LLM, RAG, orchestration multi-agents, création de MCP · human-in-the-loop, maîtrise des coûts et de la latence · pilotage de projets IA"
+    },
+    {
+      "k": "Données",
+      "v": "PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI, ETL, Data Warehouse"
+    },
+    {
+      "k": "Architecture",
+      "v": "Architecture logicielle, systèmes distribués, microservices · conception asynchrone et files (RabbitMQ) · industrialisation et scalabilité"
+    },
+    {
+      "k": "DevOps & Cloud",
+      "v": "Administration Linux · Docker · scripting · gestion de serveurs (AWS, GCP) · monitoring · CI/CD"
+    },
+    {
+      "k": "Front-end",
+      "v": "JavaScript · React · Vue · React Native"
+    },
+    {
+      "k": "Méthode & pilotage",
+      "v": "Gestion de projet, Scrum (PSM I) · clean code / Craft, tests automatisés, revues de code, formation d'équipes · lancement de startup, levée de fonds"
+    }
+  ],
+  "jobs": [
+    {
+      "company_fr": "Génération Zébrée",
+      "company_en": "Génération Zébrée",
+      "title_fr": "Développeur senior & AI Engineer (LLM / Data) - Consultant",
+      "title_en": "Senior developer & AI Engineer (LLM / Data) - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2026-03",
+      "end": "2026-08",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Moteur de matching sur API Anthropic : orchestration multi-agents et validation human-in-the-loop, pour scorer ~1 M de paires métiers/formations du domaine de la santé",
+          "en": "Matching engine on the Anthropic API: multi-agent orchestration and human-in-the-loop validation, scoring ~1M healthcare job/training pairs"
+        },
+        {
+          "fr": "Fiabilisation du LLM : structuration des sorties, contrôle qualité, maîtrise des coûts et de la latence à l'échelle",
+          "en": "LLM reliability: output structuring, quality control, cost and latency management at scale"
+        },
+        {
+          "fr": "Industrialisation : intégration au backend Symfony/PostgreSQL et ETL Python",
+          "en": "Industrialisation: integration into the Symfony/PostgreSQL backend and Python ETL"
+        },
+        {
+          "fr": "Maintenance et modernisation de generationzebree.fr",
+          "en": "Maintenance and modernisation of generationzebree.fr"
+        }
+      ],
+      "current": true,
+      "print": true
+    },
+    {
+      "company_fr": "Daxium",
+      "company_en": "Daxium",
+      "title_fr": "Développeur Symfony senior - Consultant",
+      "title_en": "Senior Symfony developer - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2023-06",
+      "end": "2026-03",
+      "stack": "PHP/Symfony, Postgres, AWS",
+      "bullets": [
+        {
+          "fr": "Plateforme modulaire web & mobile de collecte de données terrain (Industrie, Audit qualité, BTP, Retail)",
+          "en": "Modular web & mobile platform for field data collection (Industry, Quality audit, Construction, Retail)"
+        },
+        {
+          "fr": "Modernisation d'une codebase de 10 ans : migration Symfony 3 à 6 + outillage qualité",
+          "en": "Modernisation of a 10-year-old codebase: Symfony 3 to 6 migration + quality tooling"
+        },
+        {
+          "fr": "Montée en charge : séparation lecture/écriture (replica), indexation, optimisation de requêtes, cache",
+          "en": "Scalability: read/write splitting (replica), indexing, query optimisation, caching"
+        },
+        {
+          "fr": "Migration sans coupure du moteur asynchrone : ~30 traitements critiques rebâtis (files dédiées, reprise sur erreur)",
+          "en": "Zero-downtime migration of the async engine: ~30 critical jobs rebuilt (dedicated queues, error recovery)"
+        },
+        {
+          "fr": "Refonte du cœur de calcul : fiabilisation et gains de performance",
+          "en": "Core computation engine redesign: improved reliability and performance"
+        },
+        {
+          "fr": "Mise en place d'outils IA",
+          "en": "Implementation of AI tools"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Inflyter",
+      "company_en": "Inflyter",
+      "title_fr": "Développeur Symfony senior - Consultant",
+      "title_en": "Senior Symfony developer - Consultant",
+      "loc_fr": "Londres (à distance)",
+      "loc_en": "London (remote)",
+      "start": "2022-10",
+      "end": "2022-12",
+      "stack": "Symfony / Elasticsearch",
+      "bullets": [
+        {
+          "fr": "API PHP custom à destination des boutiques duty free",
+          "en": "Custom PHP API for duty free shops"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "PaloIt",
+      "company_en": "PaloIt",
+      "title_fr": "Lead dev - Consultant",
+      "title_en": "Lead dev - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2021-10",
+      "end": "2022-10",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Lead dev pour la refonte du SI d'un groupe e-commerce B2B",
+          "en": "Lead dev for the IS redesign of a B2B e-commerce group"
+        },
+        {
+          "fr": "Formations Craft / Clean code / CI-CD / Elasticsearch / Sécurité",
+          "en": "Training: Craft / Clean code / CI-CD / Elasticsearch / Security"
+        },
+        {
+          "fr": "Architecture API et React",
+          "en": "API and React architecture"
+        },
+        {
+          "fr": "Mise en place de l'infra chez Clevercloud",
+          "en": "Infrastructure setup with Clevercloud"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "iD CITY",
+      "company_en": "iD CITY",
+      "title_fr": "Développeur Symfony senior - Consultant",
+      "title_en": "Senior Symfony developer - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2020-12",
+      "end": "2021-10",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Restructuration du projet pour un passage en open source",
+          "en": "Project restructuring for an open source release"
+        },
+        {
+          "fr": "Conception de fonctionnalités pour la plateforme de concertation en ligne (Symfony, Sonata)",
+          "en": "Feature design for the online public consultation platform (Symfony, Sonata)"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "App-Elles",
+      "company_en": "App-Elles",
+      "title_fr": "Développeur back-end",
+      "title_en": "Back-end developer",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2020-06",
+      "end": "2021-06",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Développement avec API Platform",
+          "en": "API Platform development"
+        },
+        {
+          "fr": "Audit de sécurité",
+          "en": "Security audit"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Son-Video.com",
+      "company_en": "Son-Video.com",
+      "title_fr": "Consultant technique - Architecte développeur",
+      "title_en": "Technical Consultant - Architect Developer",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2020-03",
+      "end": "2020-06",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Accompagnement Elasticsearch",
+          "en": "Elasticsearch coaching"
+        },
+        {
+          "fr": "Migration AWS",
+          "en": "AWS migration"
+        },
+        {
+          "fr": "Intégration Symfony",
+          "en": "Symfony integration"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Handiplanet",
+      "company_en": "Handiplanet",
+      "title_fr": "CTO",
+      "title_en": "CTO",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2019-04",
+      "end": "2020-03",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Lead technique, relation avec les partenaires techniques",
+          "en": "Technical lead, tech partner relations"
+        },
+        {
+          "fr": "Développement PHP/Symfony, AWS, Redis, MariaDB / Angular / React Native",
+          "en": "PHP/Symfony developments, AWS, Redis, MariaDB / Angular / React Native"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Indépendant",
+      "company_en": "Indépendant",
+      "title_fr": "Formateur en conception logiciel",
+      "title_en": "Formateur en conception logiciel",
+      "loc_fr": "Nantes - EPSI, ENI",
+      "loc_en": "Nantes - EPSI, ENI",
+      "start": "2019-01",
+      "end": "2020-03",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Développement logiciel (PHP, Symfony, SQL, Systèmes Linux, Docker)",
+          "en": "Software development (PHP, Symfony, SQL, Linux System, Docker)"
+        },
+        {
+          "fr": "Management de projet, agilité, Scrum",
+          "en": "Project management, agility, Scrum"
+        },
+        {
+          "fr": "EPSI, ENI",
+          "en": "EPSI, ENI"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "print_bullets": [
+        "Développement logiciel (PHP, Symfony, SQL, Systèmes Linux, Docker)",
+        "Management de projet, agilité, Scrum"
+      ]
+    },
+    {
+      "company_fr": "FlowFo",
+      "company_en": "FlowFo",
+      "title_fr": "Lead developer - Consultant",
+      "title_en": "Lead developer - Consultant",
+      "loc_fr": "Paris",
+      "loc_en": "Paris",
+      "start": "2019-01",
+      "end": "2019-04",
+      "stack": "PHP Symfony / Api Platform / React",
+      "bullets": [
+        {
+          "fr": "PHP Symfony 4 avec API Platform / ReactJS",
+          "en": "PHP Symfony 4 with API Platform / ReactJS"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Gulfstream Communication",
+      "company_en": "Gulfstream Communication",
+      "title_fr": "Développeur Symfony - Consultant",
+      "title_en": "Symfony developer - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2018-09",
+      "end": "2018-11",
+      "stack": "PHP 7.2 / Symfony 4, Postgres, Docker",
+      "bullets": [
+        {
+          "fr": "Développement full stack pour e-commerce et PIM (Product Information Management)",
+          "en": "Full stack development for e-commerce and PIM (Product Information Management)"
+        },
+        {
+          "fr": "PHP 7.2 / Symfony 4",
+          "en": "PHP 7.2 / Symfony 4"
+        },
+        {
+          "fr": "Postgres",
+          "en": "Postgres"
+        },
+        {
+          "fr": "Docker",
+          "en": "Docker"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "print_bullets": [
+        "Développement e-commerce et PIM (Product Information Management)"
+      ]
+    },
+    {
+      "company_fr": "Sanilea",
+      "company_en": "Sanilea",
+      "title_fr": "Développeur Symfony - Consultant",
+      "title_en": "Symfony developer - Consultant",
+      "loc_fr": "Limoges",
+      "loc_en": "Limoges",
+      "start": "2018-04",
+      "end": "2018-07",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Logiciel de gestion d'ambulances (RH, planning, géolocalisation)",
+          "en": "Ambulance management software (HR, planning, location tracking)"
+        },
+        {
+          "fr": "Développement full stack : PHP 7 / Symfony 3, Docker, Redis, Elasticsearch",
+          "en": "Full stack development: PHP 7 / Symfony 3, Docker, Redis, Elasticsearch"
+        },
+        {
+          "fr": "Consulting axé sécurité et développement de fonctionnalités",
+          "en": "Consulting focused on security and feature development"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Merci Max",
+      "company_en": "Merci Max",
+      "title_fr": "Lead developer",
+      "title_en": "Lead developer",
+      "loc_fr": "Paris",
+      "loc_en": "Paris",
+      "start": "2018-01",
+      "end": "2020-02",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "PHP Symfony 3 / ReactJS",
+          "en": "PHP Symfony 3 / ReactJS"
+        },
+        {
+          "fr": "Docker",
+          "en": "Docker"
+        },
+        {
+          "fr": "AWS",
+          "en": "AWS"
+        },
+        {
+          "fr": "Postgres",
+          "en": "Postgres"
+        },
+        {
+          "fr": "Stripe",
+          "en": "Stripe"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "print_bullets": []
+    },
+    {
+      "company_fr": "Happn",
+      "company_en": "Happn",
+      "title_fr": "Développeur back-end - Consultant",
+      "title_en": "Back-end developer - Consultant",
+      "loc_fr": "Paris",
+      "loc_en": "Paris",
+      "start": "2016-11",
+      "end": "2017-12",
+      "stack": "PHP (Symfony / Zend), Docker, Elasticsearch, Memcached, RabbitMQ, MariaDB, Cassandra, Google Cloud (PubSub, BigQuery)",
+      "bullets": [
+        {
+          "fr": "API pour clients mobiles et web, centrée sur la couche Gateway",
+          "en": "API for mobile and web clients, focused on the Gateway layer"
+        },
+        {
+          "fr": "Migration d'un monolithe vers une architecture microservices",
+          "en": "Migration from a monolith into microservices"
+        },
+        {
+          "fr": "Fort trafic (39M d'utilisateurs en 2017) : enjeux de scalabilité et de latence",
+          "en": "High traffic (39M users in 2017): scalability and latency challenges"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Niji",
+      "company_en": "Niji",
+      "title_fr": "Développeur Symfony - Consultant",
+      "title_en": "Symfony developer - Consultant",
+      "loc_fr": "Nantes",
+      "loc_en": "Nantes",
+      "start": "2016-10",
+      "end": "2016-11",
+      "stack": "Symfony 2 Angular JS, LXC",
+      "bullets": [
+        {
+          "fr": "Amélioration de www.sitnstart.fr",
+          "en": "Improving www.sitnstart.fr"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Tutoroo.co",
+      "company_en": "Tutoroo.co",
+      "title_fr": "Développeur full stack senior",
+      "title_en": "Senior full stack developer",
+      "loc_fr": "Singapore",
+      "loc_en": "Singapore",
+      "start": "2016-08",
+      "end": "2016-09",
+      "stack": "PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder, AWS (S3, EC2), Travis",
+      "bullets": [
+        {
+          "fr": "Marketplace asiatique reliant étudiants et professeurs qualifiés à proximité",
+          "en": "Asian marketplace connecting students with qualified tutors nearby"
+        },
+        {
+          "fr": "PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder",
+          "en": "PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder"
+        },
+        {
+          "fr": "AWS (S3, EC2), Travis",
+          "en": "AWS (S3, EC2), Travis"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "MyJiminy",
+      "company_en": "MyJiminy",
+      "title_fr": "Lead engineer - Développeur back-end",
+      "title_en": "Lead engineer - Back-end developer",
+      "loc_fr": "San Francisco",
+      "loc_en": "San Francisco",
+      "start": "2016-02",
+      "end": "2016-05",
+      "stack": "PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt, browserify)",
+      "bullets": [
+        {
+          "fr": "Site de recrutement pour l'industrie du cinéma",
+          "en": "Recruitment website for the film industry"
+        },
+        {
+          "fr": "Lead technique & Scrum Master",
+          "en": "Technical lead & Scrum Master"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "GetProfiles",
+      "company_en": "GetProfiles",
+      "title_fr": "Développeur back-end",
+      "title_en": "Back-end developer",
+      "loc_fr": "Lyon",
+      "loc_en": "Lyon",
+      "start": "2015-10",
+      "end": "2015-12",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Python - Gestion Big Data",
+          "en": "Python - Big Data management"
+        },
+        {
+          "fr": "Administration AWS",
+          "en": "AWS administration"
+        },
+        {
+          "fr": "Développement PHP5/Angular.js",
+          "en": "PHP5/Angular.js developments"
+        }
+      ],
+      "current": false,
+      "print": true
+    },
+    {
+      "company_fr": "Coopong",
+      "company_en": "Coopong",
+      "title_fr": "Développeur back-end & Scrum master",
+      "title_en": "Back-end developer & Scrum master",
+      "loc_fr": "Chine (à distance)",
+      "loc_en": "China (remote)",
+      "start": "2015-01",
+      "end": "2015-01",
+      "stack": "PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API, Ping payment)",
+      "bullets": [
+        {
+          "fr": "Applications mobiles et back-end PHP pour le marché chinois",
+          "en": "Mobile apps and PHP Back-end for Chinese market"
+        },
+        {
+          "fr": "Lead technique, planification de projet agile",
+          "en": "Technical lead, agile project planning"
+        },
+        {
+          "fr": "Administration système Linux (Debian, Nginx, MariaDB)",
+          "en": "Linux system administration (Debian, Nginx, MariaDB)"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "yearOnly": true
+    },
+    {
+      "company_fr": "IOVOX",
+      "company_en": "IOVOX",
+      "title_fr": "Développeur full stack",
+      "title_en": "Full stack developer",
+      "loc_fr": "Londres",
+      "loc_en": "London",
+      "start": "2011-04",
+      "end": "2014-08",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Développement d'une <a href=\"https://www.voxanalytics.com/\">plateforme web d'analyse d'appels</a> pour grandes entreprises",
+          "en": "Developing a <a href=\"https://www.voxanalytics.com/\">Call Analytic Web platform</a> for large businesses"
+        },
+        {
+          "fr": "Conception d'API fournissant des rapports Big Data, suivi web/appels (API JS), click-to-call",
+          "en": "APIs providing Big Data reports, web/call tracking (JS API), click-to-call"
+        },
+        {
+          "fr": "R&D télécoms : VOIP, SIP et réseaux",
+          "en": "Telecoms R&D: VOIP, SIP and networks"
+        },
+        {
+          "fr": "Administration Linux, optimisation du stockage Data Warehouse",
+          "en": "Linux administration, Data Warehouse storage optimisation"
+        },
+        {
+          "fr": "Qualité : tests unitaires, d'API et UI ; revues de code et formation de juniors",
+          "en": "Quality: unit, API and UI tests; code reviews and junior training"
+        },
+        {
+          "fr": "Membre d'une équipe startup à succès, passée de 8 à plus de 30 personnes en 3 ans",
+          "en": "Part of a successful startup team, grown from 8 to over 30 people in 3 years"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "extra_fr": "<a href=\"https://iovox.com\">Iovox.com</a> fournit des numéros de téléphone intelligents aux entreprises et à des centaines de milliers de petites sociétés, leur offrant de meilleures analyses marketing sur les appels téléphoniques, les SMS et les interactions clients.",
+      "extra_en": "<a href=\"https://iovox.com\">Iovox.com</a> provide smart phone numbers to enterprises and hundreds of thousands of small businesses, giving them better marketing analytics on telephone calls, SMS and customer interactions."
+    },
+    {
+      "company_fr": "HPJ Solutions inc",
+      "company_en": "HPJ Solutions inc",
+      "title_fr": "Développeur PHP/Java",
+      "title_en": "PHP/Java developer",
+      "loc_fr": "Montréal",
+      "loc_en": "Montreal",
+      "start": "2010-01",
+      "end": "2010-01",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Améliorations sur <a href=\"https://www.hpjcc.com/\">HPJCC</a>, un gestionnaire d'e-mailing de masse en Java et PHP/Zend Framework",
+          "en": "Improvements on <a href=\"https://www.hpjcc.com/\">HPJCC</a>, a mass e-mailing manager using Java and PHP/Zend Framework"
+        },
+        {
+          "fr": "Développement du site \"<a href=\"https://www.marcheducourage.ca/\">Walk of Courage</a>\" (PHP/Joomla)",
+          "en": "Developing Website \"<a href=\"https://www.marcheducourage.ca/\">Walk of Courage</a>\" (PHP/Joomla)"
+        },
+        {
+          "fr": "Administration et optimisation de serveurs CentOS",
+          "en": "Administration and optimization of CentOS servers"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "yearOnly": true
+    },
+    {
+      "company_fr": "Image-WebDesign",
+      "company_en": "Image-WebDesign",
+      "title_fr": "Développeur junior PHP / iOS",
+      "title_en": "PHP / iOS junior developer",
+      "loc_fr": "Guérande",
+      "loc_en": "Guérande",
+      "start": "2009-01",
+      "end": "2009-01",
+      "stack": null,
+      "bullets": [
+        {
+          "fr": "Développement d'un site de recrutement (<a href=\"https://jobartisans.com\">jobartisans.com</a>)",
+          "en": "Coding recruitment website (<a href=\"https://jobartisans.com\">jobartisans.com</a>)"
+        },
+        {
+          "fr": "E-commerce",
+          "en": "E-commerce"
+        },
+        {
+          "fr": "R&D iPhone (Objective-C)",
+          "en": "iPhone R&D (Objective-C)"
+        },
+        {
+          "fr": "Corrections et nouvelles fonctionnalités sur divers projets web",
+          "en": "Various Web projects fixes & new features"
+        },
+        {
+          "fr": "Supervision Linux (Debian)",
+          "en": "Linux (Debian) monitoring"
+        }
+      ],
+      "current": false,
+      "print": true,
+      "yearOnly": true
+    }
+  ],
+  "education": [
+    {
+      "org": "CESI École d'Ingénieurs",
+      "years": "2007-2012",
+      "loc": "Saint Nazaire",
+      "sub": "Exia",
+      "desc_fr": "2012 - Management de projet informatique &amp; Architecte logiciel<br/>2009 - Licence en génie logiciel",
+      "desc_en": "2012 - IT Project Management &amp; Software Architecture<br/>2009 - Bachelor of Software Engineering",
+      "print_fr": "Master : Architecture logicielle et management des systèmes d'information"
+    },
+    {
+      "org_fr": "Lycée Galilée",
+      "org_en": "High School",
+      "years": "2005-2007",
+      "loc": "Guérande",
+      "desc_fr": "BAC S, sciences de l'ingénieur",
+      "desc_en": "Scientific Baccalaureate, Engineering sciences",
+      "print_fr": "BAC S, option Sciences de l'ingénieur"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Français",
+      "level": "langue maternelle"
+    },
+    {
+      "name": "Anglais",
+      "level": "professionnel complet"
+    },
+    {
+      "name": "Espagnol",
+      "level": "notions"
+    }
+  ],
+  "certifications": [
+    "Professional Scrum Master I (PSM I)"
+  ]
+}

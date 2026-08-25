@@ -19,11 +19,32 @@
         html[data-lang="fr"] .lang-en { display: none !important; }
         html[data-lang="en"] .lang-fr { display: none !important; }
 
-        .lang-switch {
+        .top-toolbar {
             position: fixed;
             top: 14px;
             right: 14px;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid #16324f;
+            background: #16324f;
+            color: #fff;
+            padding: 5px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            text-decoration: none;
+            line-height: 1;
+        }
+        .cv-download:hover { background: #204a75; color: #fff; }
+        .lang-switch {
             font-family: Arial, Helvetica, sans-serif;
         }
         .lang-switch button {
@@ -43,9 +64,15 @@
 </head>
 
 <body data-spy="scroll" data-target=".nav-menu">
-    <div class="lang-switch no-print">
-        <button type="button" data-set-lang="fr">FR</button>
-        <button type="button" data-set-lang="en">EN</button>
+    <div class="top-toolbar no-print">
+        <a class="cv-download" href="CV_Bastien_Thomas.pdf" download>
+            <i class="icon-download"></i>
+            <span class="lang-fr">Télécharger le CV</span><span class="lang-en">Download CV</span>
+        </a>
+        <div class="lang-switch">
+            <button type="button" data-set-lang="fr">FR</button>
+            <button type="button" data-set-lang="en">EN</button>
+        </div>
     </div>
     <div class="wrapper container ">
         <div class="resume-holder">
@@ -177,53 +204,30 @@
                                     </div>
                                     <div class="span9">
                                         <div class="desc text-holder">
+                                            <!-- cv:profile:start -->
                                             <p class="lang-fr">
-                                                Consultant <b>Lead Dev &amp; Architecte logiciel</b>,
-                                                <b>15 ans d'expérience</b> en <b>développement</b> et
-                                                <b>architecture back-end</b>.
+                                                Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end.
                                                 <br /><br />
-                                                Depuis 2010, j'accompagne la croissance de startups et
-                                                d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes.
-                                                Je suis spécialisé dans la <b>conception d'API</b>, l'écosystème
-                                                <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en
-                                                charge</b>, avec un esprit <b>DevOps</b> (<b>Cloud</b>, conteneurs,
-                                                <b>Linux</b>) et une exigence forte de <b>qualité de code</b> et
-                                                <b>automatisation des tests</b>.
+                                                Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Je suis spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit <b>DevOps</b> (<b>Cloud</b>, conteneurs, <b>Linux</b>) et une exigence forte de <b>qualité de code</b> et <b>automatisation des tests</b>.
                                                 <br /><br />
-                                                Je conçois et intègre l'<b>IA en
-                                                production</b> (<b>LLM</b>, <b>RAG</b>, orchestration multi-agents,
-                                                création de <b>MCP</b>) pour créer des
-                                                assistants métiers, automatiser des processus tech et valoriser les
-                                                données.
+                                                Je conçois et intègre l'<b>IA en production</b> (<b>LLM</b>, <b>RAG</b>, orchestration multi-agents, création de <b>MCP</b>) pour créer des assistants métiers, automatiser des processus tech et valoriser les données.
                                                 <br /><br />
-                                                J'interviens également en <b>pilotage de projet</b> et en
-                                                <b>accompagnement agile</b>. Master en <b>Architecture logicielle &amp;
-                                                Management de projet</b> et certifié Scrum Master (PSM I).
+                                                J'interviens également en <b>pilotage de projet</b> et en <b>accompagnement agile</b>. Master en <b>Architecture logicielle &amp; Management de projet</b> et certifié Scrum Master (PSM I).
                                                 <br /><br />
                                                 Basé à <b>Nantes</b>, je travaille en remote ou sur site.
                                             </p>
                                             <p class="lang-en">
-                                                <b>Lead Dev &amp; Software Architect</b> consultant,
-                                                <b>15 years of experience</b> in <b>development</b> and <b>back-end
-                                                architecture</b>.
+                                                <b>Lead Dev &amp; Software Architect</b> consultant, <b>15 years of experience</b> in <b>development</b> and <b>back-end architecture</b>.
                                                 <br /><br />
-                                                Since 2010, I've supported the growth of startups and companies
-                                                in London, San Francisco, Paris and now Nantes. I specialise in <b>API
-                                                design</b>, the <b>PHP / Symfony</b> ecosystem, <b>distributed
-                                                systems</b> and <b>scalability</b>, with a <b>DevOps</b> mindset
-                                                (<b>Cloud</b>, containers, <b>Linux</b>) and a strong focus on <b>code
-                                                quality</b> and <b>test automation</b>.
+                                                Since 2010, I've supported the growth of startups and companies in London, San Francisco, Paris and now Nantes. I specialise in <b>API design</b>, the <b>PHP / Symfony</b> ecosystem, <b>distributed systems</b> and <b>scalability</b>, with a <b>DevOps</b> mindset (<b>Cloud</b>, containers, <b>Linux</b>) and a strong focus on <b>code quality</b> and <b>test automation</b>.
                                                 <br /><br />
-                                                I design and bring <b>AI to production</b> (<b>LLM</b>, <b>RAG</b>,
-                                                multi-agent orchestration, <b>MCP</b> development) to build business
-                                                assistants, automate tech processes and unlock the value of data.
+                                                I design and bring <b>AI to production</b> (<b>LLM</b>, <b>RAG</b>, multi-agent orchestration, <b>MCP</b> development) to build business assistants, automate tech processes and unlock the value of data.
                                                 <br /><br />
-                                                I also work on <b>project management</b> and <b>agile coaching</b>.
-                                                Master's in <b>Software Architecture &amp; IT Management</b>, certified
-                                                Scrum Master (PSM I).
+                                                I also work on <b>project management</b> and <b>agile coaching</b>. Master's in <b>Software Architecture &amp; IT Management</b>, certified Scrum Master (PSM I).
                                                 <br /><br />
                                                 Based in <b>Nantes</b>, available remotely or on site.
                                             </p>
+                                            <!-- cv:profile:end -->
                                         </div>
                                         <div class="row-fluid no-print">
                                             <div class="span6">
@@ -269,11 +273,11 @@
                         <div class="span11">
                             <div class="box-holder">
                                 <div class="row-fluid skills-holder left">
+                                    <!-- cv:skills:start -->
                                     <div class="span6 holder">
                                         <div class="skill" data-level="99">
                                             <label><span class="lang-fr">Développement back-end - Conception d'API</span><span class="lang-en">Back-end development - API design</span></label>
                                         </div>
-
                                         <div class="skill" data-level="97">
                                             <label>PHP (Symfony / Laravel) - Python</label>
                                         </div>
@@ -281,7 +285,7 @@
                                             <label><span class="lang-fr">Administration Linux - Docker - Scripting</span><span class="lang-en">Linux administration - Docker - Scripting</span></label>
                                         </div>
                                         <div class="skill" data-level="90">
-                                            <label><span class="lang-fr">PostgreSQL - MariaDB - Elasticsearch - Cassandra</span><span class="lang-en">PostgreSQL - MariaDB - Elasticsearch - Cassandra</span></label>
+                                            <label>PostgreSQL - MariaDB - Elasticsearch - Cassandra</label>
                                         </div>
                                         <div class="skill" data-level="85">
                                             <label><span class="lang-fr">Gestion de serveurs (AWS / GCP) - Monitoring</span><span class="lang-en">Server management (AWS / GCP) - Monitoring</span></label>
@@ -310,6 +314,7 @@
                                             <label><span class="lang-fr">Lancement startup - Levée de fonds</span><span class="lang-en">Startup launch - Fundraising</span></label>
                                         </div>
                                     </div>
+                                    <!-- cv:skills:end -->
                                 </div>
                             </div>
                         </div>
@@ -331,18 +336,19 @@
                             <div class="box-holder exp-box">
                                 <div class="row-fluid timeline-holder">
                                     <div class="span12">
+                                        <!-- cv:experiences:start -->
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Avril 2026 / Maintenant</span><span class="lang-en">April 2026 / Now</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Mars 2026 / Maintenant</span><span class="lang-en">March 2026 / Now</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Génération Zébrée</h3>
                                                     <h4><span class="lang-fr">Développeur senior &amp; AI Engineer (LLM / Data) - Consultant</span><span class="lang-en">Senior developer &amp; AI Engineer (LLM / Data) - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
-                                                        <li class="lang-fr">Moteur de matching sur API Claude (Opus) : orchestration multi-agents, prompts structurés et validation human-in-the-loop, pour scorer ~1 M de paires métiers/formations du domaine de la santé</li>
-                                                        <li class="lang-en">Matching engine on the Claude (Opus) API: multi-agent orchestration, structured prompts and human-in-the-loop validation, scoring ~1M healthcare job/training pairs</li>
+                                                        <li class="lang-fr">Moteur de matching sur API Anthropic : orchestration multi-agents et validation human-in-the-loop, pour scorer ~1 M de paires métiers/formations du domaine de la santé</li>
+                                                        <li class="lang-en">Matching engine on the Anthropic API: multi-agent orchestration and human-in-the-loop validation, scoring ~1M healthcare job/training pairs</li>
                                                         <li class="lang-fr">Fiabilisation du LLM : structuration des sorties, contrôle qualité, maîtrise des coûts et de la latence à l'échelle</li>
                                                         <li class="lang-en">LLM reliability: output structuring, quality control, cost and latency management at scale</li>
                                                         <li class="lang-fr">Industrialisation : intégration au backend Symfony/PostgreSQL et ETL Python</li>
@@ -400,10 +406,10 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Nov. 2021 / Oct. 2022</span><span class="lang-en">Nov 2021 / Oct 2022</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Oct. 2021 / Oct. 2022</span><span class="lang-en">Oct 2021 / Oct 2022</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>PaloIt</h3>
-                                                    <h4><span class="lang-fr">Lead dev - Consultant</span><span class="lang-en">Lead dev - Consultant</span></h4>
+                                                    <h4>Lead dev - Consultant</h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
@@ -422,7 +428,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Déc. 2020 / Sept. 2021</span><span class="lang-en">Dec 2020 / Sept 2021</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Déc. 2020 / Oct. 2021</span><span class="lang-en">Dec 2020 / Oct 2021</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>iD CITY</h3>
                                                     <h4><span class="lang-fr">Développeur Symfony senior - Consultant</span><span class="lang-en">Senior Symfony developer - Consultant</span></h4>
@@ -440,7 +446,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Juin 2020 / Maintenant</span><span class="lang-en">June 2020 / Now</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Juin 2020 / Juin 2021</span><span class="lang-en">June 2020 / June 2021</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>App-Elles</h3>
                                                     <h4><span class="lang-fr">Développeur back-end</span><span class="lang-en">Back-end developer</span></h4>
@@ -458,43 +464,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">2019 / Maintenant</span><span class="lang-en">2019 / Now</span></div>
-                                                    <h3><span class="lang-fr">Formateur</span><span class="lang-en">Instructor</span></h3>
-                                                </div>
-                                                <div class="body">
-                                                    <ul>
-                                                        <li class="lang-fr">Développement logiciel (PHP, Symfony, SQL, Systèmes Linux, Docker)</li>
-                                                        <li class="lang-en">Software development (PHP, Symfony, SQL, Linux System, Docker)</li>
-                                                        <li class="lang-fr">Management de projet, agilité, Scrum</li>
-                                                        <li class="lang-en">Project management, agility, Scrum</li>
-                                                        <li class="lang-fr">EPSI, ENI</li>
-                                                        <li class="lang-en">EPSI, ENI</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="exp-item">
-                                            <div class="exp-holder">
-                                                <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Avril 2019 / Juin 2020</span><span class="lang-en">April 2019 / June 2020</span></div>
-                                                    <h4 class="location">Nantes</h4>
-                                                    <h3>Handiplanet</h3>
-                                                    <h4>CTO</h4>
-                                                </div>
-                                                <div class="body">
-                                                    <ul>
-                                                        <li class="lang-fr">Lead technique, relation avec les partenaires techniques</li>
-                                                        <li class="lang-en">Technical lead, tech partner relations</li>
-                                                        <li class="lang-fr">Développement PHP/Symfony, AWS, Redis, MariaDB / Angular / React Native</li>
-                                                        <li class="lang-en">PHP/Symfony developments, AWS, Redis, MariaDB / Angular / React Native</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="exp-item">
-                                            <div class="exp-holder">
-                                                <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Mars 2020</span><span class="lang-en">March 2020</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Mars 2020 / Juin 2020</span><span class="lang-en">March 2020 / June 2020</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Son-Video.com</h3>
                                                     <h4><span class="lang-fr">Consultant technique - Architecte développeur</span><span class="lang-en">Technical Consultant - Architect Developer</span></h4>
@@ -514,13 +484,51 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Février / Avril 2019</span><span class="lang-en">February / April 2019</span></div>
-                                                    <h4 class="location">Paris</h4>
-                                                    <h3>FlowFo</h3>
-                                                    <h4><span class="lang-fr">Lead developer - Consultant</span><span class="lang-en">Lead developer - Consultant</span></h4>
+                                                    <div class="date-range"><span class="lang-fr">Avr. 2019 / Mars 2020</span><span class="lang-en">April 2019 / March 2020</span></div>
+                                                    <h4 class="location">Nantes</h4>
+                                                    <h3>Handiplanet</h3>
+                                                    <h4>CTO</h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li class="lang-fr">Lead technique, relation avec les partenaires techniques</li>
+                                                        <li class="lang-en">Technical lead, tech partner relations</li>
+                                                        <li class="lang-fr">Développement PHP/Symfony, AWS, Redis, MariaDB / Angular / React Native</li>
+                                                        <li class="lang-en">PHP/Symfony developments, AWS, Redis, MariaDB / Angular / React Native</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exp-item">
+                                            <div class="exp-holder">
+                                                <div class="head">
+                                                    <div class="date-range"><span class="lang-fr">Janv. 2019 / Mars 2020</span><span class="lang-en">Jan 2019 / March 2020</span></div>
+                                                    <h4 class="location">Nantes - EPSI, ENI</h4>
+                                                    <h3>Indépendant</h3>
+                                                    <h4>Formateur en conception logiciel</h4>
+                                                </div>
+                                                <div class="body">
+                                                    <ul>
+                                                        <li class="lang-fr">Développement logiciel (PHP, Symfony, SQL, Systèmes Linux, Docker)</li>
+                                                        <li class="lang-en">Software development (PHP, Symfony, SQL, Linux System, Docker)</li>
+                                                        <li class="lang-fr">Management de projet, agilité, Scrum</li>
+                                                        <li class="lang-en">Project management, agility, Scrum</li>
+                                                        <li>EPSI, ENI</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exp-item">
+                                            <div class="exp-holder">
+                                                <div class="head">
+                                                    <div class="date-range"><span class="lang-fr">Janv. 2019 / Avr. 2019</span><span class="lang-en">Jan 2019 / April 2019</span></div>
+                                                    <h4 class="location">Paris</h4>
+                                                    <h3>FlowFo</h3>
+                                                    <h4>Lead developer - Consultant</h4>
+                                                </div>
+                                                <div class="body">
+                                                    <ul>
+                                                        <li>PHP Symfony / Api Platform / React</li>
                                                         <li class="lang-fr">PHP Symfony 4 avec API Platform / ReactJS</li>
                                                         <li class="lang-en">PHP Symfony 4 with API Platform / ReactJS</li>
                                                     </ul>
@@ -530,32 +538,14 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">2018-2019 (temps partiel)</span><span class="lang-en">2018-2019 (part time)</span></div>
-                                                    <h4 class="location">Paris</h4>
-                                                    <h3>Merci Max</h3>
-                                                    <h4>Lead developer</h4>
-                                                </div>
-                                                <div class="body">
-                                                    <ul>
-                                                        <li>PHP Symfony 3 / ReactJS</li>
-                                                        <li>Docker</li>
-                                                        <li>AWS</li>
-                                                        <li>Postgres</li>
-                                                        <li>Stripe</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="exp-item">
-                                            <div class="exp-holder">
-                                                <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Automne 2018</span><span class="lang-en">Fall 2018</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Sept. 2018 / Nov. 2018</span><span class="lang-en">Sept 2018 / Nov 2018</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Gulfstream Communication</h3>
                                                     <h4><span class="lang-fr">Développeur Symfony - Consultant</span><span class="lang-en">Symfony developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>PHP 7.2 / Symfony 4, Postgres, Docker</li>
                                                         <li class="lang-fr">Développement full stack pour e-commerce et PIM (Product Information Management)</li>
                                                         <li class="lang-en">Full stack development for e-commerce and PIM (Product Information Management)</li>
                                                         <li>PHP 7.2 / Symfony 4</li>
@@ -568,7 +558,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Printemps 2018</span><span class="lang-en">Spring 2018</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Avr. 2018 / Juil. 2018</span><span class="lang-en">April 2018 / July 2018</span></div>
                                                     <h4 class="location">Limoges</h4>
                                                     <h3>Sanilea</h3>
                                                     <h4><span class="lang-fr">Développeur Symfony - Consultant</span><span class="lang-en">Symfony developer - Consultant</span></h4>
@@ -588,21 +578,39 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Décembre 2016 - Décembre 2017</span><span class="lang-en">December 2016 - December 2017</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Janv. 2018 / Févr. 2020</span><span class="lang-en">Jan 2018 / Feb 2020</span></div>
+                                                    <h4 class="location">Paris</h4>
+                                                    <h3>Merci Max</h3>
+                                                    <h4>Lead developer</h4>
+                                                </div>
+                                                <div class="body">
+                                                    <ul>
+                                                        <li>PHP Symfony 3 / ReactJS</li>
+                                                        <li>Docker</li>
+                                                        <li>AWS</li>
+                                                        <li>Postgres</li>
+                                                        <li>Stripe</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="exp-item">
+                                            <div class="exp-holder">
+                                                <div class="head">
+                                                    <div class="date-range"><span class="lang-fr">Nov. 2016 / Déc. 2017</span><span class="lang-en">Nov 2016 / Dec 2017</span></div>
                                                     <h4 class="location">Paris</h4>
                                                     <h3>Happn</h3>
                                                     <h4><span class="lang-fr">Développeur back-end - Consultant</span><span class="lang-en">Back-end developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>PHP (Symfony / Zend), Docker, Elasticsearch, Memcached, RabbitMQ, MariaDB, Cassandra, Google Cloud (PubSub, BigQuery)</li>
                                                         <li class="lang-fr">API pour clients mobiles et web, centrée sur la couche Gateway</li>
                                                         <li class="lang-en">API for mobile and web clients, focused on the Gateway layer</li>
                                                         <li class="lang-fr">Migration d'un monolithe vers une architecture microservices</li>
                                                         <li class="lang-en">Migration from a monolith into microservices</li>
                                                         <li class="lang-fr">Fort trafic (39M d'utilisateurs en 2017) : enjeux de scalabilité et de latence</li>
                                                         <li class="lang-en">High traffic (39M users in 2017): scalability and latency challenges</li>
-                                                        <li class="lang-fr">PHP (Symfony / Zend), Docker, Elasticsearch, Memcached, RabbitMQ, MariaDB, Cassandra, Google Cloud (PubSub, BigQuery)</li>
-                                                        <li class="lang-en">PHP (Symfony / Zend), Docker, Elasticsearch, Memcached, RabbitMQ, MariaDB, Cassandra, Google Cloud (PubSub, BigQuery)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -610,16 +618,16 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Novembre 2016</span><span class="lang-en">November 2016</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Oct. 2016 / Nov. 2016</span><span class="lang-en">Oct 2016 / Nov 2016</span></div>
                                                     <h4 class="location">Nantes</h4>
                                                     <h3>Niji</h3>
                                                     <h4><span class="lang-fr">Développeur Symfony - Consultant</span><span class="lang-en">Symfony developer - Consultant</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>Symfony 2 Angular JS, LXC</li>
                                                         <li class="lang-fr">Amélioration de www.sitnstart.fr</li>
                                                         <li class="lang-en">Improving www.sitnstart.fr</li>
-                                                        <li>Symfony 2 Angular JS, LXC</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -627,13 +635,14 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Été 2016</span><span class="lang-en">Summer 2016</span></div>
-                                                    <h4 style="float: right; clear:both; font-size: 14px"><i><span class="lang-fr">Singapour (à distance)</span><span class="lang-en">Singapore (remote)</span></i></h4>
+                                                    <div class="date-range"><span class="lang-fr">Août 2016 / Sept. 2016</span><span class="lang-en">Aug 2016 / Sept 2016</span></div>
+                                                    <h4 class="location">Singapore</h4>
                                                     <h3>Tutoroo.co</h3>
                                                     <h4><span class="lang-fr">Développeur full stack senior</span><span class="lang-en">Senior full stack developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder, AWS (S3, EC2), Travis</li>
                                                         <li class="lang-fr">Marketplace asiatique reliant étudiants et professeurs qualifiés à proximité</li>
                                                         <li class="lang-en">Asian marketplace connecting students with qualified tutors nearby</li>
                                                         <li>PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder</li>
@@ -645,18 +654,18 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Printemps 2016</span><span class="lang-en">Spring 2016</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Févr. 2016 / Mai 2016</span><span class="lang-en">Feb 2016 / May 2016</span></div>
                                                     <h4 class="location">San Francisco</h4>
                                                     <h3>MyJiminy</h3>
                                                     <h4><span class="lang-fr">Lead engineer - Développeur back-end</span><span class="lang-en">Lead engineer - Back-end developer</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt, browserify)</li>
                                                         <li class="lang-fr">Site de recrutement pour l'industrie du cinéma</li>
                                                         <li class="lang-en">Recruitment website for the film industry</li>
                                                         <li class="lang-fr">Lead technique &amp; Scrum Master</li>
                                                         <li class="lang-en">Technical lead &amp; Scrum Master</li>
-                                                        <li>PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt, browserify)</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -664,7 +673,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range"><span class="lang-fr">Hiver 2015</span><span class="lang-en">Winter 2015</span></div>
+                                                    <div class="date-range"><span class="lang-fr">Oct. 2015 / Déc. 2015</span><span class="lang-en">Oct 2015 / Dec 2015</span></div>
                                                     <h4 class="location">Lyon</h4>
                                                     <h3>GetProfiles</h3>
                                                     <h4><span class="lang-fr">Développeur back-end</span><span class="lang-en">Back-end developer</span></h4>
@@ -684,18 +693,18 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2015</div>
+                                                    <div class="date-range"><span class="lang-fr">2015</span><span class="lang-en">2015</span></div>
                                                     <h4 class="location"><span class="lang-fr">Chine (à distance)</span><span class="lang-en">China (remote)</span></h4>
                                                     <h3>Coopong</h3>
                                                     <h4><span class="lang-fr">Développeur back-end &amp; Scrum master</span><span class="lang-en">Back-end developer &amp; Scrum master</span></h4>
                                                 </div>
                                                 <div class="body">
                                                     <ul>
+                                                        <li>PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API, Ping payment)</li>
                                                         <li class="lang-fr">Applications mobiles et back-end PHP pour le marché chinois</li>
                                                         <li class="lang-en">Mobile apps and PHP Back-end for Chinese market</li>
                                                         <li class="lang-fr">Lead technique, planification de projet agile</li>
                                                         <li class="lang-en">Technical lead, agile project planning</li>
-                                                        <li>PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API, Ping payment)</li>
                                                         <li class="lang-fr">Administration système Linux (Debian, Nginx, MariaDB)</li>
                                                         <li class="lang-en">Linux system administration (Debian, Nginx, MariaDB)</li>
                                                     </ul>
@@ -705,7 +714,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2011-2014</div>
+                                                    <div class="date-range"><span class="lang-fr">Avr. 2011 / Août 2014</span><span class="lang-en">April 2011 / Aug 2014</span></div>
                                                     <h4 class="location"><span class="lang-fr">Londres</span><span class="lang-en">London</span></h4>
                                                     <h3>IOVOX</h3>
                                                     <h4><span class="lang-fr">Développeur full stack</span><span class="lang-en">Full stack developer</span></h4>
@@ -726,19 +735,10 @@
                                                         <li class="lang-en">Part of a successful startup team, grown from 8 to over 30 people in 3 years</li>
                                                     </ul>
                                                     <p class="lang-fr">
-                                                        <a href="https://iovox.com">Iovox.com</a> fournit des numéros de téléphone intelligents
-                                                        aux entreprises et à des centaines de milliers de petites sociétés,
-                                                        leur offrant de meilleures analyses marketing sur les appels téléphoniques, les SMS et
-                                                        les interactions clients.
+                                                        <a href="https://iovox.com">Iovox.com</a> fournit des numéros de téléphone intelligents aux entreprises et à des centaines de milliers de petites sociétés, leur offrant de meilleures analyses marketing sur les appels téléphoniques, les SMS et les interactions clients.
                                                     </p>
                                                     <p class="lang-en">
-                                                        <a href="https://iovox.com">Iovox.com</a> provide smart phone
-                                                        numbers
-                                                        to enterprises and hundreds of thousands of small businesses,
-                                                        giving
-                                                        them better marketing analytics on telephone calls, SMS and
-                                                        customer
-                                                        interactions.
+                                                        <a href="https://iovox.com">Iovox.com</a> provide smart phone numbers to enterprises and hundreds of thousands of small businesses, giving them better marketing analytics on telephone calls, SMS and customer interactions.
                                                     </p>
                                                 </div>
                                             </div>
@@ -746,7 +746,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2010</div>
+                                                    <div class="date-range"><span class="lang-fr">2010</span><span class="lang-en">2010</span></div>
                                                     <h4 class="location"><span class="lang-fr">Montréal</span><span class="lang-en">Montreal</span></h4>
                                                     <h3>HPJ Solutions inc</h3>
                                                     <h4><span class="lang-fr">Développeur PHP/Java</span><span class="lang-en">PHP/Java developer</span></h4>
@@ -766,7 +766,7 @@
                                         <div class="exp-item">
                                             <div class="exp-holder">
                                                 <div class="head">
-                                                    <div class="date-range">2009</div>
+                                                    <div class="date-range"><span class="lang-fr">2009</span><span class="lang-en">2009</span></div>
                                                     <h4 class="location">Guérande</h4>
                                                     <h3>Image-WebDesign</h3>
                                                     <h4><span class="lang-fr">Développeur junior PHP / iOS</span><span class="lang-en">PHP / iOS junior developer</span></h4>
@@ -786,6 +786,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- cv:experiences:end -->
                                     </div>
                                 </div>
                             </div>

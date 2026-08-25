@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Bastien Thomas - CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm 14mm 11mm 14mm;
+    @bottom-right {
+      content: "Bastien Thomas · " counter(page) "/" counter(pages);
+      font-family: Carlito, sans-serif;
+      font-size: 7.5pt;
+      color: #9aa4ae;
+    }
+  }
+  @page :first { margin-top: 0; }
+
+  * { box-sizing: border-box; }
+  html { font-family: Carlito, "DejaVu Sans", sans-serif; }
+  body {
+    margin: 0;
+    font-size: 8.7pt;
+    line-height: 1.27;
+    color: #2c3238;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- HEADER ---------- */
+  .masthead {
+    background: #16324f;
+    color: #fff;
+    padding: 10mm 14mm 6.5mm 14mm;
+    margin: 0 -14mm 4.5mm -14mm;
+  }
+  .name {
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: -0.4pt;
+    line-height: 1;
+    margin: 0;
+  }
+  .role {
+    font-size: 10.8pt;
+    color: #8fd0d6;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+    margin: 2.5mm 0 4mm 0;
+  }
+  .contact {
+    font-size: 8.6pt;
+    color: #cdd8e2;
+    letter-spacing: 0.1pt;
+  }
+  .contact span { white-space: nowrap; }
+  .sep { color: #4d7096; padding: 0 2.2mm; }
+
+  /* ---------- SECTIONS ---------- */
+  h2 {
+    font-size: 8.6pt;
+    font-weight: 700;
+    letter-spacing: 1.5pt;
+    text-transform: uppercase;
+    color: #16324f;
+    margin: 3.6mm 0 2mm 0;
+    padding-bottom: 1.1mm;
+    border-bottom: 1.6pt solid #16324f;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  .profile { text-align: justify; color: #3a4149; }
+
+  /* ---------- SKILLS ---------- */
+  .skills { width: 100%; border-collapse: collapse; }
+  .skills td { vertical-align: top; padding: 0.65mm 0; }
+  .skills td.k {
+    width: 32mm;
+    font-weight: 700;
+    color: #16324f;
+    font-size: 8.6pt;
+    padding-right: 3mm;
+    white-space: nowrap;
+  }
+  .skills td.v { color: #3a4149; }
+
+  /* ---------- EXPERIENCE ---------- */
+  .job {
+    margin-bottom: 2.6mm;
+    page-break-inside: avoid;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4mm;
+  }
+  .when {
+    font-size: 8pt;
+    color: #6b757f;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+  .when b { color: #16324f; font-weight: 700; }
+  .co { font-size: 10.4pt; font-weight: 700; color: #16324f; line-height: 1.2; }
+  .pos { font-size: 9.2pt; font-weight: 600; color: #2f7d8c; margin-bottom: 1.2mm; }
+  .pos .loc { color: #8a949e; font-weight: 400; font-size: 8.3pt; }
+  ul { margin: 0; padding-left: 3.6mm; }
+  li { margin-bottom: 0.4mm; padding-left: 0.6mm; }
+  li::marker { color: #2f7d8c; }
+
+  /* ---------- FOOTER BLOCKS ---------- */
+  .cols { width: 100%; border-collapse: collapse; page-break-inside: avoid; }
+  .cols > tbody > tr > td { vertical-align: top; width: 50%; }
+  .cols td.left { padding-right: 7mm; }
+  .edu { margin-bottom: 2mm; }
+  .edu .t { font-weight: 700; color: #16324f; }
+  .edu .s { color: #6b757f; font-size: 8.5pt; }
+  .kv { margin-bottom: 1.4mm; }
+  .kv b { color: #16324f; }
+
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="name">Bastien Thomas</div>
+  <div class="role">Senior Developer & Software Architect - Backend / IA</div>
+  <div class="contact">
+    <span>Nantes, France</span><span class="sep">|</span><span>Remote ou sur site</span><span class="sep">|</span><span>contact@wink-dev.com</span><span class="sep">|</span><span>wink-dev.com</span><span class="sep">|</span><span>linkedin.com/in/bastienthomas</span>
+  </div>
+</div>
+
+<h2>Profil</h2>
+<p class="profile" style="margin:0">
+Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end. Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit DevOps (Cloud, conteneurs, Linux) et une exigence forte de qualité de code et d'automatisation des tests. J'accompagne les entreprises dans l'<b>intégration d'IA en production</b> (LLM, RAG, orchestration multi-agents, création de MCP) pour développer des assistants métiers, automatiser des processus tech et valoriser la donnée. J'interviens également en pilotage de projet et en accompagnement agile.
+</p>
+
+<h2>Compétences</h2>
+<table class="skills">
+  <tr><td class="k">Back-end &amp; API</td><td class="v">Développement back-end, conception d'API · PHP (Symfony, Laravel) · Python</td></tr>
+  <tr><td class="k">IA &amp; LLM</td><td class="v">LLM, RAG, orchestration multi-agents, création de MCP · human-in-the-loop, maîtrise des coûts et de la latence · pilotage de projets IA</td></tr>
+  <tr><td class="k">Données</td><td class="v">PostgreSQL · MariaDB · Elasticsearch · Cassandra · Redis · analyse de données et BI, ETL, Data Warehouse</td></tr>
+  <tr><td class="k">Architecture</td><td class="v">Architecture logicielle, systèmes distribués, microservices · conception asynchrone et files (RabbitMQ) · industrialisation et scalabilité</td></tr>
+  <tr><td class="k">DevOps &amp; Cloud</td><td class="v">Administration Linux · Docker · scripting · gestion de serveurs (AWS, GCP) · monitoring · CI/CD</td></tr>
+  <tr><td class="k">Front-end</td><td class="v">JavaScript · React · Vue · React Native</td></tr>
+  <tr><td class="k">Méthode &amp; pilotage</td><td class="v">Gestion de projet, Scrum (PSM I) · clean code / Craft, tests automatisés, revues de code, formation d'équipes · lancement de startup, levée de fonds</td></tr>
+</table>
+
+<h2>Expérience</h2>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Génération Zébrée</div>
+    <div class="when"><b>Mars 2026</b> - Aujourd'hui · 6 mois</div>
+  </div>
+  <div class="pos">Développeur senior &amp; AI Engineer (LLM / Data) - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Moteur de matching sur API Anthropic : orchestration multi-agents et validation human-in-the-loop, pour scorer ~1 M de paires métiers/formations du domaine de la santé</li>
+    <li>Fiabilisation du LLM : structuration des sorties, contrôle qualité, maîtrise des coûts et de la latence à l'échelle</li>
+    <li>Industrialisation : intégration au backend Symfony/PostgreSQL et ETL Python</li>
+    <li>Maintenance et modernisation de generationzebree.fr</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Daxium</div>
+    <div class="when"><b>Juin 2023</b> - Mars 2026 · 2 ans 10 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony senior - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Plateforme modulaire web &amp; mobile de collecte de données terrain (Industrie, Audit qualité, BTP, Retail)</li>
+    <li>Modernisation d'une codebase de 10 ans : migration Symfony 3 à 6 + outillage qualité</li>
+    <li>Montée en charge : séparation lecture/écriture (replica), indexation, optimisation de requêtes, cache</li>
+    <li>Migration sans coupure du moteur asynchrone : ~30 traitements critiques rebâtis (files dédiées, reprise sur erreur)</li>
+    <li>Refonte du cœur de calcul : fiabilisation et gains de performance</li>
+    <li>Mise en place d'outils IA</li>
+    <li>PHP/Symfony, Postgres, AWS</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Inflyter</div>
+    <div class="when"><b>Oct. 2022</b> - Déc. 2022 · 3 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony senior - Consultant <span class="loc">· Londres (à distance)</span></div>
+  <ul>
+    <li>API PHP custom à destination des boutiques duty free</li>
+    <li>Symfony / Elasticsearch</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">PaloIt</div>
+    <div class="when"><b>Oct. 2021</b> - Oct. 2022 · 1 an 1 mois</div>
+  </div>
+  <div class="pos">Lead dev - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Lead dev pour la refonte du SI d'un groupe e-commerce B2B</li>
+    <li>Formations Craft / Clean code / CI-CD / Elasticsearch / Sécurité</li>
+    <li>Architecture API et React</li>
+    <li>Mise en place de l'infra chez Clevercloud</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">iD CITY</div>
+    <div class="when"><b>Déc. 2020</b> - Oct. 2021 · 11 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony senior - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Restructuration du projet pour un passage en open source</li>
+    <li>Conception de fonctionnalités pour la plateforme de concertation en ligne (Symfony, Sonata)</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">App-Elles</div>
+    <div class="when"><b>Juin 2020</b> - Juin 2021 · 1 an 1 mois</div>
+  </div>
+  <div class="pos">Développeur back-end <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Développement avec API Platform</li>
+    <li>Audit de sécurité</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Son-Video.com</div>
+    <div class="when"><b>Mars 2020</b> - Juin 2020 · 4 mois</div>
+  </div>
+  <div class="pos">Consultant technique - Architecte développeur <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Accompagnement Elasticsearch</li>
+    <li>Migration AWS</li>
+    <li>Intégration Symfony</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Handiplanet</div>
+    <div class="when"><b>Avr. 2019</b> - Mars 2020 · 1 an</div>
+  </div>
+  <div class="pos">CTO <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Lead technique, relation avec les partenaires techniques</li>
+    <li>Développement PHP/Symfony, AWS, Redis, MariaDB / Angular / React Native</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Indépendant</div>
+    <div class="when"><b>Janv. 2019</b> - Mars 2020 · 1 an 3 mois</div>
+  </div>
+  <div class="pos">Formateur en conception logiciel <span class="loc">· Nantes - EPSI, ENI</span></div>
+  <ul>
+    <li>Développement logiciel (PHP, Symfony, SQL, Systèmes Linux, Docker)</li>
+    <li>Management de projet, agilité, Scrum</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">FlowFo</div>
+    <div class="when"><b>Janv. 2019</b> - Avr. 2019 · 4 mois</div>
+  </div>
+  <div class="pos">Lead developer - Consultant <span class="loc">· Paris</span></div>
+  <ul>
+    <li>PHP Symfony 4 avec API Platform / ReactJS</li>
+    <li>PHP Symfony / Api Platform / React</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Gulfstream Communication</div>
+    <div class="when"><b>Sept. 2018</b> - Nov. 2018 · 3 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Développement e-commerce et PIM (Product Information Management)</li>
+    <li>PHP 7.2 / Symfony 4, Postgres, Docker</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Sanilea</div>
+    <div class="when"><b>Avr. 2018</b> - Juil. 2018 · 4 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony - Consultant <span class="loc">· Limoges</span></div>
+  <ul>
+    <li>Logiciel de gestion d'ambulances (RH, planning, géolocalisation)</li>
+    <li>Développement full stack : PHP 7 / Symfony 3, Docker, Redis, Elasticsearch</li>
+    <li>Consulting axé sécurité et développement de fonctionnalités</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Merci Max</div>
+    <div class="when"><b>Janv. 2018</b> - Févr. 2020 · 2 ans 2 mois</div>
+  </div>
+  <div class="pos">Lead developer <span class="loc">· Paris</span></div>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Happn</div>
+    <div class="when"><b>Nov. 2016</b> - Déc. 2017 · 1 an 2 mois</div>
+  </div>
+  <div class="pos">Développeur back-end - Consultant <span class="loc">· Paris</span></div>
+  <ul>
+    <li>API pour clients mobiles et web, centrée sur la couche Gateway</li>
+    <li>Migration d'un monolithe vers une architecture microservices</li>
+    <li>Fort trafic (39M d'utilisateurs en 2017) : enjeux de scalabilité et de latence</li>
+    <li>PHP (Symfony / Zend), Docker, Elasticsearch, Memcached, RabbitMQ, MariaDB, Cassandra, Google Cloud (PubSub, BigQuery)</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Niji</div>
+    <div class="when"><b>Oct. 2016</b> - Nov. 2016 · 2 mois</div>
+  </div>
+  <div class="pos">Développeur Symfony - Consultant <span class="loc">· Nantes</span></div>
+  <ul>
+    <li>Amélioration de www.sitnstart.fr</li>
+    <li>Symfony 2 Angular JS, LXC</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Tutoroo.co</div>
+    <div class="when"><b>Août 2016</b> - Sept. 2016 · 2 mois</div>
+  </div>
+  <div class="pos">Développeur full stack senior <span class="loc">· Singapore</span></div>
+  <ul>
+    <li>Marketplace asiatique reliant étudiants et professeurs qualifiés à proximité</li>
+    <li>PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder</li>
+    <li>AWS (S3, EC2), Travis</li>
+    <li>PHP7, Symfony2, Sass, Elasticsearch, GoogleMap Geocoder, AWS (S3, EC2), Travis</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">MyJiminy</div>
+    <div class="when"><b>Févr. 2016</b> - Mai 2016 · 4 mois</div>
+  </div>
+  <div class="pos">Lead engineer - Développeur back-end <span class="loc">· San Francisco</span></div>
+  <ul>
+    <li>Site de recrutement pour l'industrie du cinéma</li>
+    <li>Lead technique &amp; Scrum Master</li>
+    <li>PHP5 Symfony2 (Twitter API, Amazon S3, Saas, Grunt, browserify)</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">GetProfiles</div>
+    <div class="when"><b>Oct. 2015</b> - Déc. 2015 · 3 mois</div>
+  </div>
+  <div class="pos">Développeur back-end <span class="loc">· Lyon</span></div>
+  <ul>
+    <li>Python - Gestion Big Data</li>
+    <li>Administration AWS</li>
+    <li>Développement PHP5/Angular.js</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Coopong</div>
+    <div class="when"><b>2015</b></div>
+  </div>
+  <div class="pos">Développeur back-end &amp; Scrum master <span class="loc">· Chine (à distance)</span></div>
+  <ul>
+    <li>Applications mobiles et back-end PHP pour le marché chinois</li>
+    <li>Lead technique, planification de projet agile</li>
+    <li>Administration système Linux (Debian, Nginx, MariaDB)</li>
+    <li>PHP5 Symfony2 (REST API, JWT, Google Places API, Twilio API, Ping payment)</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">IOVOX</div>
+    <div class="when"><b>Avr. 2011</b> - Août 2014 · 3 ans 5 mois</div>
+  </div>
+  <div class="pos">Développeur full stack <span class="loc">· Londres</span></div>
+  <ul>
+    <li>Développement d'une <a href="https://www.voxanalytics.com/">plateforme web d'analyse d'appels</a> pour grandes entreprises</li>
+    <li>Conception d'API fournissant des rapports Big Data, suivi web/appels (API JS), click-to-call</li>
+    <li>R&amp;D télécoms : VOIP, SIP et réseaux</li>
+    <li>Administration Linux, optimisation du stockage Data Warehouse</li>
+    <li>Qualité : tests unitaires, d'API et UI ; revues de code et formation de juniors</li>
+    <li>Membre d'une équipe startup à succès, passée de 8 à plus de 30 personnes en 3 ans</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">HPJ Solutions inc</div>
+    <div class="when"><b>2010</b></div>
+  </div>
+  <div class="pos">Développeur PHP/Java <span class="loc">· Montréal</span></div>
+  <ul>
+    <li>Améliorations sur <a href="https://www.hpjcc.com/">HPJCC</a>, un gestionnaire d'e-mailing de masse en Java et PHP/Zend Framework</li>
+    <li>Développement du site "<a href="https://www.marcheducourage.ca/">Walk of Courage</a>" (PHP/Joomla)</li>
+    <li>Administration et optimisation de serveurs CentOS</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="head">
+    <div class="co">Image-WebDesign</div>
+    <div class="when"><b>2009</b></div>
+  </div>
+  <div class="pos">Développeur junior PHP / iOS <span class="loc">· Guérande</span></div>
+  <ul>
+    <li>Développement d'un site de recrutement (<a href="https://jobartisans.com">jobartisans.com</a>)</li>
+    <li>E-commerce</li>
+    <li>R&amp;D iPhone (Objective-C)</li>
+    <li>Corrections et nouvelles fonctionnalités sur divers projets web</li>
+    <li>Supervision Linux (Debian)</li>
+  </ul>
+</div>
+
+<table class="cols">
+  <tr>
+    <td class="left">
+      <h2 style="margin-top:3mm">Formation</h2>
+      <div class="edu">
+        <div class="t">CESI École d'Ingénieurs - 2007-2012</div>
+        <div class="s">Master : Architecture logicielle et management des systèmes d'information</div>
+      </div>
+      <div class="edu">
+        <div class="t">Lycée Galilée - 2005-2007</div>
+        <div class="s">BAC S, option Sciences de l'ingénieur</div>
+      </div>
+    </td>
+    <td>
+      <h2 style="margin-top:3mm">Langues &amp; certification</h2>
+      <div class="kv"><b>Français</b> - langue maternelle</div>
+      <div class="kv"><b>Anglais</b> - professionnel complet</div>
+      <div class="kv"><b>Espagnol</b> - notions</div>
+      <div class="kv" style="margin-top:2.5mm"><b>Professional Scrum Master I (PSM I)</b></div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
