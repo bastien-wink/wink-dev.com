@@ -17,13 +17,13 @@
       "Consultant Lead Dev et Architecte logiciel, <b>15 ans d'expérience</b> en développement et architecture back-end.",
       "Depuis 2010, j'accompagne la croissance de startups et d'entreprises à Londres, San Francisco, Paris et aujourd'hui Nantes. Je suis spécialisé dans la <b>conception d'API</b>, l'écosystème <b>PHP / Symfony</b>, les <b>systèmes distribués</b> et la <b>montée en charge</b>, avec un esprit <b>DevOps</b> (<b>Cloud</b>, conteneurs, <b>Linux</b>) et une exigence forte de <b>qualité de code</b> et <b>automatisation des tests</b>.",
       "Je conçois et intègre l'<b>IA en production</b> (<b>LLM</b>, <b>RAG</b>, orchestration multi-agents, création de <b>MCP</b>) pour créer des assistants métiers, automatiser des processus tech et valoriser les données.",
-      "J'interviens également en <b>pilotage de projet</b> et en <b>accompagnement agile</b>. Master en <b>Architecture logicielle &amp; Management de projet</b> et certifié Scrum Master (PSM I)."
+      "J'interviens également en <b>pilotage de projet</b> et en <b>accompagnement agile</b>. Formé en <b>architecture logicielle &amp; management de projet</b> (cursus ingénieur CESI) et certifié Scrum Master (PSM I)."
     ],
     "en": [
       "<b>Lead Dev &amp; Software Architect</b> consultant, <b>15 years of experience</b> in <b>development</b> and <b>back-end architecture</b>.",
       "Since 2010, I've supported the growth of startups and companies in London, San Francisco, Paris and now Nantes. I specialise in <b>API design</b>, the <b>PHP / Symfony</b> ecosystem, <b>distributed systems</b> and <b>scalability</b>, with a <b>DevOps</b> mindset (<b>Cloud</b>, containers, <b>Linux</b>) and a strong focus on <b>code quality</b> and <b>test automation</b>.",
       "I design and bring <b>AI to production</b> (<b>LLM</b>, <b>RAG</b>, multi-agent orchestration, <b>MCP</b> development) to build business assistants, automate tech processes and unlock the value of data.",
-      "I also work on <b>project management</b> and <b>agile coaching</b>. Master's in <b>Software Architecture &amp; IT Management</b>, certified Scrum Master (PSM I)."
+      "I also work on <b>project management</b> and <b>agile coaching</b>. Trained in <b>software architecture &amp; IT project management</b> (engineering programme at CESI), certified Scrum Master (PSM I)."
     ]
   },
   "skills_site": [
@@ -131,7 +131,7 @@
       "loc_fr": "Nantes",
       "loc_en": "Nantes",
       "start": "2026-03",
-      "end": "2026-08",
+      "end": "2026-09",
       "bullets": [
         {
           "fr": "Moteur de matching sur API Anthropic : orchestration multi-agents et validation human-in-the-loop, pour scorer plus de 1 million de paires métiers/formations du domaine de la santé",
@@ -150,7 +150,7 @@
           "en": "Maintenance and modernisation of generationzebree.fr"
         }
       ],
-      "current": true,
+      "current": false,
       "print": true
     },
     {
@@ -748,9 +748,9 @@
       "years": "2007-2012",
       "loc": "Saint Nazaire",
       "sub": "Exia",
-      "desc_fr": "2012 - Management de projet informatique &amp; Architecte logiciel<br/>2009 - Licence en génie logiciel",
-      "desc_en": "2012 - IT Project Management &amp; Software Architecture<br/>2009 - Bachelor of Software Engineering",
-      "print_fr": "Master : Architecture logicielle et management des systèmes d'information"
+      "desc_fr": "2009-2012 - Cycle ingénieur : management de projet informatique &amp; architecture logicielle<br/>2009 - Licence en génie logiciel",
+      "desc_en": "2009-2012 - Engineering programme: IT project management &amp; software architecture<br/>2009 - Bachelor of Software Engineering",
+      "print_fr": "Cursus ingénieur : architecture logicielle et management des SI<br/>Licence en génie logiciel (2009)"
     },
     {
       "org_fr": "Lycée Galilée",
